@@ -50,6 +50,16 @@
         </div>
     </div>
 
+    <!-- Local Display Script -->
+    <script>
+        function display(sectionId) {
+            // Hide all sections
+            document.getElementById('sectionConferencehomepage').style.display = 'none';
+            document.getElementById('sectionConferencedetailspage').style.display = 'none';
+            // Show the target section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
     <!-- UI Kit Script -->
     <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
     <!-- Bootstrap JS dependencies -->
