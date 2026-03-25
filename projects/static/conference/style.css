@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    background-color: #f8fafc;
+}
+
+.conference-text-container {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.conference-image {
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.conference-main-heading {
+    font-size: 32px;
+    color: #183b56;
+    font-family: "Bree Serif";
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.conference-description {
+    color: #5a7184;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.know-more-btn {
+    background-color: #183b56;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.details-text-container {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.details-main-heading {
+    font-size: 24px;
+    color: #183b56;
+    font-family: "Bree Serif";
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.details-description {
+    color: #5a7184;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.details-card {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex: 1;
+    max-width: 140px;
+}
+
+.top-one {
+    color: #183b56;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.bottom-one {
+    color: #5a7184;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.back-btn {
+    background-color: #5a7184;
+    border: none;
+    padding: 8px 25px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
