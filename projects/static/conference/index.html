@@ -52,15 +52,20 @@
 
     <!-- UI Kit Script -->
     <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
-    <!-- Local Display Script (Overrides UI Kit if necessary) -->
+    <!-- Robust Display Script -->
     <script>
-        function display(sectionId) {
-            // Hide all sections
-            document.getElementById('sectionConferencehomepage').style.display = 'none';
-            document.getElementById('sectionConferencedetailspage').style.display = 'none';
-            // Show the target section
-            document.getElementById(sectionId).style.display = 'block';
-        }
+        window.display = function(sectionId) {
+            const home = document.getElementById('sectionConferencehomepage');
+            const details = document.getElementById('sectionConferencedetailspage');
+            
+            if (home) home.style.setProperty('display', 'none', 'important');
+            if (details) details.style.setProperty('display', 'none', 'important');
+            
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.style.setProperty('display', 'block', 'important');
+            }
+        };
     </script>
     <!-- Bootstrap JS dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
