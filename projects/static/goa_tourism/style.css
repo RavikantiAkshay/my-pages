@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    background-color: #f8f9fa;
+}
+
+.bg-container {
+    background-color: white;
+    min-height: 100vh;
+}
+
+.heading {
+    color: #323f4b;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #7b8794;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.text-container {
+    padding: 10px 15px;
+}
+
+.picture {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.video {
+    border-radius: 12px;
+}
+
+.carousel-item img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel-indicators li {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
