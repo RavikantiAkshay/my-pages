@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.top-logo {
+    height: 30px;
+    width: 50px;
+}
+.nav-link {
+    color: #323f4b !important;
+    font-weight: 500;
+}
+.nav-link.active {
+    color: #1a2137 !important;
+}
+
+/* Banner */
+.banner-section {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-banner-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: white;
+}
+.main-heading {
+    font-size: 45px;
+    font-weight: bold;
+}
+.main-button {
+    background-color: #1a2137;
+    color: white;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 30px;
+    font-weight: 500;
+}
+
+/* Features */
+.features-section-heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1f2933;
+    margin-bottom: 20px;
+}
+.card-item {
+    text-align: center;
+    padding: 20px;
+}
+.card-image {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+}
+.card-heading {
+    font-size: 22px;
+    font-weight: 500;
+    color: #323f4b;
+}
+.card-description {
+    color: #7b8794;
+    font-size: 16px;
+}
+
+/* VR Kit */
+.vr-kit-section {
+    background-color: #f9fbfe;
+}
+.vr-kit-heading {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1f2933;
+}
+.vr-kit-image {
+    width: 170px;
+    height: 200px;
+    object-fit: contain;
+}
+.vr-kit-description {
+    color: #323f4b;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* General Text Styles */
+.text-heading {
+    color: #1f2933;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text-description {
+    color: #7b8794;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Dark Section Custom */
+.bg-dark-custom {
+    background-color: #222b36;
+    color: white;
+}
+.possible-heading {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.outline-white-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+.outline-white-button:hover {
+    background-color: white;
+    color: #222b36;
+}
+
+/* Blogs */
+.blog-category {
+    color: #959ead;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.blog-title {
+    color: #323f4b;
+    font-weight: bold;
+}
+.blog-description {
+    color: #7b8794;
+    font-size: 14px;
+}
+.blog-link {
+    color: #1754a1;
+    font-weight: bold;
+    text-decoration: none;
+}
+.blue-button {
+    background-color: #1754a1;
+    color: white;
+    border-radius: 3px;
+    padding: 10px 40px;
+}
+
+/* Products */
+.product-card {
+    height: 60vh;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+}
+.product-1 {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-img.png");
+}
+.product-2 {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-with-controllers-img.png");
+}
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.product-price {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Footer */
+.footer-section {
+    background-color: #19232d;
+    color: #5a7184;
+}
+.footer-logo {
+    height: 80px;
+}
+.social-icon-box {
+    background-color: #202b36;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.footer-heading {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-link {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer-hr {
+    border-top: 1px solid #5a7184;
+    opacity: 0.3;
+}
+.footer-copyright {
+    font-size: 14px;
+    color: #959ead;
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 32px;
+    }
+    .product-card {
+        height: 40vh;
+    }
+}
