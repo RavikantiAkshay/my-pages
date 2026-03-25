@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>NeonArchitect | Digital Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="NeonArchitect - High-end technical engineering meets artistic precision in digital architecture."/>
+    
+    <!-- Scripts & Styles -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <noscript>
+        <style>
+            .reveal { opacity: 1 !important; transform: none !important; }
+        </style>
+    </noscript>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#dab9ff",
+                        "on-surface": "#e5e2e1",
+                        "tertiary-fixed-dim": "#00daf3",
+                        "on-tertiary-container": "#00dcf5",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#005d68",
+                        "on-secondary": "#003731",
+                        "error-container": "#93000a",
+                        "primary-fixed-dim": "#dab9ff",
+                        "inverse-primary": "#7743b5",
+                        "surface-bright": "#393939",
+                        "on-primary-fixed": "#2a0053",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-dim": "#131313",
+                        "on-primary": "#460283",
+                        "on-background": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "surface-variant": "#353534",
+                        "on-tertiary-fixed": "#001f24",
+                        "on-secondary-fixed-variant": "#005048",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container": "#201f1f",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary": "#00daf3",
+                        "on-primary-fixed-variant": "#5e289b",
+                        "background": "#131313",
+                        "on-primary-container": "#dbbbff",
+                        "outline-variant": "#494456",
+                        "on-tertiary-fixed-variant": "#004f58",
+                        "on-secondary-container": "#005950",
+                        "on-tertiary": "#00363d",
+                        "tertiary-fixed": "#9cf0ff",
+                        "on-error": "#690005",
+                        "primary-container": "#6c37a9",
+                        "surface-tint": "#dab9ff",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#4ffbe6",
+                        "outline": "#948da2",
+                        "on-surface-variant": "#cbc3d9",
+                        "primary-fixed": "#eedbff",
+                        "secondary-container": "#00d8c4",
+                        "surface": "#131313",
+                        "secondary-fixed-dim": "#17deca",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary-fixed": "#00201c",
+                        "secondary": "#46f5e0",
+                        "surface-container-highest": "#353534"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+    
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/60 backdrop-blur-xl border-b border-[#494456]/15 shadow-2xl transition-all duration-300">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto font-['Space_Grotesk'] tracking-tight">
+            <div class="text-xl font-bold tracking-tighter text-[#e5e2e1]">NeonArchitect</div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-[#dab9ff] font-bold border-b-2 border-[#dab9ff] pb-1" href="#hero">All Projects</a>
+                <a class="text-[#cbc3d9] hover:text-[#e5e2e1] transition-colors" href="#static">Static</a>
+                <a class="text-[#cbc3d9] hover:text-[#e5e2e1] transition-colors" href="#responsive">Responsive</a>
+                <a class="text-[#cbc3d9] hover:text-[#e5e2e1] transition-colors" href="#dynamic">Dynamic</a>
+            </div>
+            <button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold scale-95 active:scale-90 transition-transform hover:bg-primary/90">
+                Connect
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex flex-col justify-center px-8 pt-24 overflow-hidden bg-surface" id="hero">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] hero-glow pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto w-full relative z-10">
+                <div class="max-w-4xl reveal">
+                    <span class="label-md text-primary tracking-[0.2em] font-medium block mb-6 uppercase">Portfolio v2.04</span>
+                    <h1 class="font-headline text-5xl md:text-8xl font-bold tracking-tighter text-on-surface mb-8 leading-[0.9]">
+                        CRAFTING <span class="text-primary italic">DIGITAL</span> ARCHITECTURE.
+                    </h1>
+                    <p class="text-xl md:text-2xl text-on-surface-variant font-light max-w-2xl leading-relaxed mb-12">
+                        Merging high-end technical engineering with artistic precision. Exploring the boundaries of static elegance, fluid responsiveness, and dynamic complexity.
+                    </p>
+                    <div class="flex flex-wrap gap-6">
+                        <a class="flex items-center gap-3 px-8 py-4 bg-surface-container-high rounded-full border border-outline-variant/20 hover:border-primary/50 transition-all group" href="#static">
+                            <span class="text-sm font-label tracking-widest uppercase opacity-60">Explore Work</span>
+                            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="absolute right-[-5%] bottom-[10%] hidden lg:block w-1/3 aspect-square glass-card rounded-xl border border-outline-variant/10 p-4 rotate-3 reveal" style="transition-delay: 0.3s">
+                <div class="w-full h-full rounded-lg overflow-hidden bg-surface-container-lowest relative">
+                    <img class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" alt="abstract 3d glass sphere reflecting neon purple and blue lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkgGnJRs-M0XPlh8i7K6mBpXAf0o-4-FQ4GW2pIaL4Qf0SDsvhhclCt7oJdAJghTm88ynljNK9YHblDbCIueZcRu0KamW-LkrHUxk4sJj6QICFBIRT-1He28SnDe87dCNAxEukgBKIBZiw6pRSgN0YxIUA6qcR3BXFru3z7EadrqzIRh2ElXeuocF0Si0D7_dskb_a80BTaGAsREyG68a57RKBapf4GQpRl21m9jx0iRMQHGION-ojFV3xhe9QeJRmMKkDTFzBjfyf"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Static Webpages -->
+        <section class="py-24 px-8 bg-surface-container-low relative" id="static">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 reveal">
+                    <div class="max-w-2xl">
+                        <h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface mb-4">Static Webpages</h2>
+                        <p class="text-on-surface-variant text-lg">Pure structure, optimized for speed and semantic clarity. High-performance layouts with pixel-perfect control.</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="text-xs font-label uppercase tracking-widest">Category: 01</span>
+                        <div class="h-[1px] w-12 bg-primary"></div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Basic Landing Page -->
+                    <div class="group relative bg-surface-container rounded-xl overflow-hidden signature-glow-primary transition-all duration-500 hover:-translate-y-2 border border-outline-variant/5">
+                        <div class="device-wrapper">
+                            <div class="device-frame">
+                                <iframe src="projects/static/todolist/index.html" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-on-surface mb-3">Todolist Project</h3>
+                            <p class="text-on-surface-variant mb-6 line-clamp-2">A clean, focused landing page for a todo application, emphasizing typography and structured content.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Profile -->
+                    <div class="group relative bg-surface-container rounded-xl overflow-hidden signature-glow-primary transition-all duration-500 hover:-translate-y-2 border border-outline-variant/5 md:mt-12">
+                        <div class="device-wrapper">
+                            <div class="device-frame">
+                                <iframe src="projects/static/rahul_chat/index.html" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-on-surface mb-3">Chat Page</h3>
+                            <p class="text-on-surface-variant mb-6 line-clamp-2">A messenger-style interface with adaptive speech bubbles and structured conversational design.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Simple Dashboard -->
+                    <div class="group relative bg-surface-container rounded-xl overflow-hidden signature-glow-primary transition-all duration-500 hover:-translate-y-2 border border-outline-variant/5">
+                        <div class="device-wrapper">
+                            <div class="device-frame">
+                                <div class="w-full h-full bg-surface-container-high flex items-center justify-center p-8 text-center">
+                                    <p class="text-on-surface-variant font-label uppercase tracking-widest text-xs">Awaiting Technical Architecture</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-on-surface mb-3">Simple Dashboard</h3>
+                            <p class="text-on-surface-variant mb-6 line-clamp-2">Technical data visualization using a strictly grid-based design for maximum clarity.</p>
+                            <a class="inline-flex items-center gap-2 text-primary font-bold hover:underline transition-all" href="#">
+                                View Project <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Responsive Webpages -->
+        <section class="py-24 px-8 bg-surface relative overflow-hidden" id="responsive">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-secondary/5 blur-[100px] rounded-full pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 reveal">
+                    <div class="max-w-2xl">
+                        <h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface mb-4">Responsive Webpages</h2>
+                        <p class="text-on-surface-variant text-lg">Fluid systems that breathe across devices. Adaptive architectures that prioritize the user experience on any screen size.</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-secondary">
+                        <span class="text-xs font-label uppercase tracking-widest">Category: 02</span>
+                        <div class="h-[1px] w-12 bg-secondary"></div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- FlyBuy Shop -->
+                    <div class="group flex flex-col md:flex-row bg-surface-container rounded-xl overflow-hidden signature-glow-secondary border border-outline-variant/5 transition-all duration-500">
+                        <div class="md:w-1/2 bg-surface-container-lowest relative p-6 flex items-center justify-center">
+                            <div class="relative w-full aspect-[9/16] max-w-[180px] bg-black rounded-[2rem] border-[6px] border-[#2a2a2a] overflow-hidden shadow-2xl">
+                                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="mobile shop app" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjaXG0zvvjjF4RVf_sdWvi_muISmxu6NqkLXpWfaFyMAhM5cLKlAV-ABKf2Ss59cUqM-GdxqFNDOabinBDoz0DgmNi8B-HvAaHBo9bGmREtQiuTwKmX678UAr-X6EwzQ6RJqNeJcvRbsF5tMdOJUDdwm5N_47bXbJ8taRjDYA06kPV8qryY7ws7pab0elO8MGh63KiBGCVEJXTInAXPJggVMinSZXDU7U1tBegLe0BZL00ivNwcRLfg4EsEjiDISJbGUf9xy_1YFOL"/>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-on-surface mb-3">FlyBuy Shop</h3>
+                            <p class="text-on-surface-variant mb-6">A mobile-first e-commerce experience. Features complex flexbox grids that seamlessly collapse.</p>
+                            <div class="flex gap-3 mb-6">
+                                <span class="text-[10px] px-2 py-1 bg-secondary/10 text-secondary border border-secondary/20 rounded font-label tracking-tighter uppercase">Mobile Optimized</span>
+                                <span class="text-[10px] px-2 py-1 bg-secondary/10 text-secondary border border-secondary/20 rounded font-label tracking-tighter uppercase">Flex Grid</span>
+                            </div>
+                            <a class="inline-flex items-center gap-2 text-secondary font-bold hover:underline" href="#">
+                                View Project <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- VR Revolution Experience -->
+                    <div class="group flex flex-col md:flex-row bg-surface-container rounded-xl overflow-hidden signature-glow-secondary border border-outline-variant/5 transition-all duration-500">
+                        <div class="md:w-1/2 bg-surface-container-lowest relative p-6 flex items-center justify-center">
+                            <div class="relative w-full aspect-[9/16] max-w-[180px] bg-black rounded-[2rem] border-[6px] border-[#2a2a2a] overflow-hidden shadow-2xl">
+                                <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="VR website mobile view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCDDoFoGmb0nqEawdT5gbjLMjxPQtOJLiyZ2gFqyhk8rph-slZU2EplupTL9UYbOiuiecxhOpzoJ0JNPAme0_6McmKkE4GwFiTZUsUaP5vscsR2uf-JMp82SAD9LK98sDAHdA37zp9ebQJOs8pY16A4jlCD25G55yceK_rMs-yUCD8ocmbrlQIDS1AWtRw10HJv4TocsjYsQpW37AvSnAfTWh_nPm4lYp-rfqmsIOkpFOznS8b2ueYnv27eSHl6CG9XwsTXoOjCC5w"/>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-on-surface mb-3">VR Revolution</h3>
+                            <p class="text-on-surface-variant mb-6">Immersive tech-showcase. Utilizes CSS Grid for complex desktop layouts that pivot to mobile narrative.</p>
+                            <div class="flex gap-3 mb-6">
+                                <span class="text-[10px] px-2 py-1 bg-secondary/10 text-secondary border border-secondary/20 rounded font-label tracking-tighter uppercase">CSS Grid</span>
+                                <span class="text-[10px] px-2 py-1 bg-secondary/10 text-secondary border border-secondary/20 rounded font-label tracking-tighter uppercase">Adaptive</span>
+                            </div>
+                            <a class="inline-flex items-center gap-2 text-secondary font-bold hover:underline" href="#">
+                                View Project <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Style Card for FoodMunch -->
+                <div class="mt-12 group bg-surface-container rounded-xl overflow-hidden signature-glow-secondary border border-outline-variant/5 transition-all duration-500 reveal">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="lg:w-2/3 p-12">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-secondary">restaurant</span>
+                                </div>
+                                <h3 class="text-3xl font-bold text-on-surface">FoodMunch App</h3>
+                            </div>
+                            <p class="text-on-surface-variant text-lg mb-8 max-w-xl">
+                                A comprehensive food delivery concept focusing on the interplay between desktop browsing and high-utility mobile journies.
+                            </p>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                                <div class="p-4 rounded-lg bg-surface-container-high border border-outline-variant/10 text-center">
+                                    <div class="text-secondary font-bold text-xl">100</div>
+                                    <div class="text-[10px] font-label uppercase tracking-widest opacity-60">Lighthouse</div>
+                                </div>
+                                <div class="p-4 rounded-lg bg-surface-container-high border border-outline-variant/10 text-center">
+                                    <div class="text-secondary font-bold text-xl">&lt; 1s</div>
+                                    <div class="text-[10px] font-label uppercase tracking-widest opacity-60">Load Time</div>
+                                </div>
+                                <div class="p-4 rounded-lg bg-surface-container-high border border-outline-variant/10 text-center">
+                                    <div class="text-secondary font-bold text-xl">4</div>
+                                    <div class="text-[10px] font-label uppercase tracking-widest opacity-60">Breakpoints</div>
+                                </div>
+                                <div class="p-4 rounded-lg bg-surface-container-high border border-outline-variant/10 text-center">
+                                    <div class="text-secondary font-bold text-xl">YES</div>
+                                    <div class="text-[10px] font-label uppercase tracking-widest opacity-60">PWA Ready</div>
+                                </div>
+                            </div>
+                            <a class="inline-flex items-center gap-3 bg-secondary text-on-secondary px-8 py-3 rounded-lg font-bold hover:opacity-90 transition-all" href="#">
+                                Launch Project <span class="material-symbols-outlined text-sm">rocket_launch</span>
+                            </a>
+                        </div>
+                        <div class="lg:w-1/3 bg-surface-container-lowest min-h-[300px] relative overflow-hidden flex items-center justify-center">
+                            <img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-1000" alt="gourmet pizza" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDahGJpsiFlAShMdcLqgcfFic4slli8GvceGfzKDeVUqsoK-O9lRy-bRnw0xobhJbMcL7BdjV5VyN3mq58nFfiiWp99Vf4MjMECPCdQUSGn9Ow8AwAmrsh7Bzk2t4W_Ko472ZqExHLJYwsrwa3-3RWs6JI5bd1BpDs0b9z61EtcT7uoAotlRb0RzbNz9PeFSkd6bnkU1Fq-h3x2kngljJNarjJm7MlfddWKHHY73VwH5IfITogBVpigkP5hW3HQrlntHzdYxA3YeAgP"/>
+                            <div class="relative z-10 w-48 aspect-[9/16] bg-black rounded-[2rem] border-[6px] border-[#2a2a2a] overflow-hidden shadow-2xl translate-y-12">
+                                <div class="w-full h-full bg-secondary/5 flex items-center justify-center p-4">
+                                    <div class="w-full space-y-3">
+                                        <div class="h-4 w-2/3 bg-secondary/30 rounded"></div>
+                                        <div class="h-20 w-full bg-secondary/20 rounded"></div>
+                                        <div class="h-4 w-full bg-secondary/30 rounded"></div>
+                                        <div class="h-4 w-1/2 bg-secondary/30 rounded"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Dynamic Webpages -->
+        <section class="py-24 px-8 bg-surface-container-low relative" id="dynamic">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 reveal">
+                    <div class="max-w-2xl">
+                        <h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface mb-4">Dynamic Webpages</h2>
+                        <p class="text-on-surface-variant text-lg">Logic-driven interfaces that respond to data. Real-time interactions and state management for complex user workflows.</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-tertiary">
+                        <span class="text-xs font-label uppercase tracking-widest">Category: 03</span>
+                        <div class="h-[1px] w-12 bg-tertiary"></div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Live Weather Dashboard -->
+                    <div class="group glass-card border border-outline-variant/15 p-8 rounded-xl signature-glow-tertiary transition-all duration-300">
+                        <div class="mb-8 p-6 bg-surface-container-lowest rounded-lg border border-outline-variant/10 aspect-video flex flex-col justify-center overflow-hidden">
+                            <span class="material-symbols-outlined text-5xl text-tertiary mb-4 group-hover:scale-110 transition-transform">cloud_sync</span>
+                            <div class="space-y-2">
+                                <div class="h-1 w-full bg-tertiary/20 rounded"></div>
+                                <div class="h-1 w-4/5 bg-tertiary/20 rounded"></div>
+                                <div class="h-1 w-2/3 bg-tertiary/20 rounded"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-on-surface mb-3">Live Weather Dashboard</h3>
+                        <p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Integrated OpenWeather API with dynamic UI themes shifting based on atmospheric conditions.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[10px] font-label px-2 py-1 bg-surface-container-high text-on-surface-variant rounded uppercase">API Fetch</span>
+                            <span class="text-[10px] font-label px-2 py-1 bg-surface-container-high text-on-surface-variant rounded uppercase">Async/Await</span>
+                        </div>
+                        <a class="inline-flex items-center gap-2 text-tertiary font-bold group-hover:gap-4 transition-all" href="#">
+                            View Live <span class="material-symbols-outlined text-sm">bolt</span>
+                        </a>
+                    </div>
+
+                    <!-- Task Management App -->
+                    <div class="group glass-card border border-outline-variant/15 p-8 rounded-xl signature-glow-tertiary transition-all duration-300 md:-translate-y-8">
+                        <div class="mb-8 p-6 bg-surface-container-lowest rounded-lg border border-outline-variant/10 aspect-video flex flex-col justify-center overflow-hidden">
+                            <span class="material-symbols-outlined text-5xl text-tertiary mb-4 group-hover:scale-110 transition-transform">checklist_rtl</span>
+                            <div class="flex gap-2">
+                                <div class="h-8 w-8 bg-tertiary/20 rounded-full"></div>
+                                <div class="h-8 w-8 bg-tertiary/20 rounded-full"></div>
+                                <div class="h-8 w-8 bg-tertiary/20 rounded-full"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-on-surface mb-3">Task Management App</h3>
+                        <p class="text-on-surface-variant mb-6 text-sm leading-relaxed">State-driven tracking with drag-and-drop and local storage synchronization.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[10px] font-label px-2 py-1 bg-surface-container-high text-on-surface-variant rounded uppercase">LocalStorage</span>
+                            <span class="text-[10px] font-label px-2 py-1 bg-surface-container-high text-on-surface-variant rounded uppercase">Drag-Drop</span>
+                        </div>
+                        <a class="inline-flex items-center gap-2 text-tertiary font-bold group-hover:gap-4 transition-all" href="#">
+                            View Live <span class="material-symbols-outlined text-sm">bolt</span>
+                        </a>
+                    </div>
+
+                    <!-- Interactive Quiz Platform -->
+                    <div class="group glass-card border border-outline-variant/15 p-8 rounded-xl signature-glow-tertiary transition-all duration-300">
+                        <div class="mb-8 p-6 bg-surface-container-lowest rounded-lg border border-outline-variant/10 aspect-video flex flex-col justify-center overflow-hidden">
+                            <span class="material-symbols-outlined text-5xl text-tertiary mb-4 group-hover:scale-110 transition-transform">quiz</span>
+                            <div class="h-4 w-full bg-tertiary/20 rounded-full overflow-hidden">
+                                <div class="h-full w-2/3 bg-tertiary"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-on-surface mb-3">Interactive Quiz Platform</h3>
+                        <p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Gamified learning with real-time scoring and dynamic difficulty scaling.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[10px] font-label px-2 py-1 bg-surface-container-high text-on-surface-variant rounded uppercase">State Mgmt</span>
+                            <span class="text-[10px] font-label px-2 py-1 bg-surface-container-high text-on-surface-variant rounded uppercase">Gamification</span>
+                        </div>
+                        <a class="inline-flex items-center gap-2 text-tertiary font-bold group-hover:gap-4 transition-all" href="#">
+                            View Live <span class="material-symbols-outlined text-sm">bolt</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-32 px-8 bg-surface relative">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <h2 class="font-headline text-5xl md:text-7xl font-bold mb-12 uppercase">Have a project in <span class="text-primary">mind?</span></h2>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <button class="bg-primary text-on-primary px-10 py-5 rounded-xl font-bold text-xl hover:scale-105 transition-transform flex items-center gap-4">
+                        Let's Talk <span class="material-symbols-outlined">send</span>
+                    </button>
+                    <button class="border border-outline px-10 py-5 rounded-xl font-bold text-xl text-on-surface hover:bg-surface-container-high transition-all">
+                        View Resume
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#131313] w-full py-12 px-8 border-t border-[#494456]/10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto font-['Inter'] text-sm tracking-wide">
+            <div class="text-lg font-black text-[#e5e2e1]">Neon Architect</div>
+            <div class="text-[#cbc3d9] opacity-80">
+                © 2024 Neon Architect. Built for the future.
+            </div>
+            <div class="flex gap-8">
+                <a class="text-[#cbc3d9] hover:text-[#46f5e0] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">GitHub</a>
+                <a class="text-[#cbc3d9] hover:text-[#46f5e0] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+                <a class="text-[#cbc3d9] hover:text-[#46f5e0] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Twitter</a>
+                <a class="text-[#cbc3d9] hover:text-[#46f5e0] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
