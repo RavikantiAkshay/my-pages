@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.tomato {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/foodbg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #f6c56e;
+    font-family: "Roboto";
+    color: #323f4b;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px 25px 40px; /* Enhanced padding for better look in mobile frame */
+    border: none;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.btn {
+    background-color: white;
+    color: #323f4b;
+    width: 140px;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background-color: #fff;
+}
+
+.potatoHeading {
+    font-family: "Bree Serif";
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
