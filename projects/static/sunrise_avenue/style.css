@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@300;400;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Bree Serif", serif;
+}
+
+.home-bg-container {
+    background-image: url("https://assets.ccbp.in/frontend/static-website/flats-list-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.home-card {
+    background-color: white;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.home-heading {
+    color: #f19116;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.home-description {
+    color: #64748b;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+.home-button {
+    background-color: #f19116;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 25px;
+    transition: transform 0.2s;
+}
+
+.home-button:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.list-bg-container {
+    background-color: #1a1a1a;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+.list-card {
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.list-card:hover {
+    transform: translateY(-5px);
+}
+
+.list-card-image {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.list-text-container {
+    padding: 15px;
+    flex: 1;
+}
+
+.list-card-heading {
+    color: #0f172a;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.list-card-description {
+    font-size: 12px;
+    color: #475569;
+    font-family: "Roboto";
+    line-height: 1.5;
+}
+
+.list-button {
+    width: 120px;
+    background-color: #f19116;
+}
+
+/* Detailed View */
+.detail-bg-container {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+}
+
+.top-detail-image {
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottom-detail-container {
+    padding: 30px 25px;
+}
+
+.bottom-price {
+    color: #f19116;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bottom-icon {
+    height: 20px;
+    margin-right: 12px;
+}
+
+.bottom-location {
+    color: #cbd5e1;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+.bottom-heading {
+    color: #f19116;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.bottom-description {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: "Roboto";
+    text-align: justify;
+}
+
+.detailed-button {
+    margin: 10px;
+    padding: 8px 35px;
+}
