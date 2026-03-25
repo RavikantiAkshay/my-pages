@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Robust Toggle Overrides -->
+    <script>
+        function display(sectionId) {
+            const sections = ['sectionConferencehomepage', 'sectionConferencedetailspage'];
+            sections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.setProperty('display', 'none', 'important');
+            });
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.style.setProperty('display', 'block', 'important');
+            }
+        }
+        window.display = display;
+    </script>
 </head>
 <body>
     <div id="sectionConferencehomepage">
@@ -52,15 +67,14 @@
 
     <!-- UI Kit Script -->
     <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
-    <!-- Robust Display Script -->
+    <!-- Universal Display Script -->
     <script>
         window.display = function(sectionId) {
-            const home = document.getElementById('sectionConferencehomepage');
-            const details = document.getElementById('sectionConferencedetailspage');
+            // Force hide all sections starting with 'section'
+            const allSections = document.querySelectorAll('[id^="section"]');
+            allSections.forEach(s => s.style.setProperty('display', 'none', 'important'));
             
-            if (home) home.style.setProperty('display', 'none', 'important');
-            if (details) details.style.setProperty('display', 'none', 'important');
-            
+            // Show the requested section
             const target = document.getElementById(sectionId);
             if (target) {
                 target.style.setProperty('display', 'block', 'important');

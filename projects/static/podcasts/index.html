@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Robust Manual Toggle Overrides -->
+    <script>
+        function display(sectionId) {
+            console.log("Navigating to:", sectionId);
+            const sections = ['sectionHomePage', 'sectionPuriJagannadhPage', 'sectionTedxPage', 'sectionSadhguruPage', 'sectionOnPurposePage'];
+            sections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.setProperty('display', 'none', 'important');
+            });
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.style.setProperty('display', 'block', 'important');
+            }
+        }
+        window.display = display; // Ensure global availability
+    </script>
 </head>
 <body>
     <div id="sectionHomePage">
@@ -128,20 +144,6 @@
 
     <!-- UI Kit Script -->
     <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
-    <!-- Robust Manual Toggle Overrides -->
-    <script>
-        window.display = function(sectionId) {
-            // Force hide all sections starting with 'section'
-            const allSections = document.querySelectorAll('[id^="section"]');
-            allSections.forEach(s => s.style.setProperty('display', 'none', 'important'));
-            
-            // Show the requested section
-            const target = document.getElementById(sectionId);
-            if (target) {
-                target.style.setProperty('display', 'block', 'important');
-            }
-        };
-    </script>
 
     <!-- Bootstrap JS dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
