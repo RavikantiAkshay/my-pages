@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    background-color: #f8fafc;
+}
+
+.home-top-container {
+    background-image: url('https://d2clawv67efefq.cloudfront.net/ccbp-static-website/podcasts-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.home-top-heading {
+    color: white;
+    font-weight: 300;
+    font-size: 42px;
+    margin: 0;
+}
+
+.home-bottom-container {
+    padding: 30px 15px;
+}
+
+.home-card {
+    margin: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+}
+
+.home-card-image {
+    width: 140px;
+    height: 110px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.home-card-name {
+    margin: 12px 0 2px;
+    font-weight: bold;
+    color: #151765;
+    font-size: 15px;
+}
+
+.home-card-para {
+    color: #5a7184;
+    font-size: 13px;
+}
+
+.top-container {
+    background-color: #151765;
+    padding: 30px 20px;
+    color: white;
+}
+
+.podcast-image {
+    height: 90px;
+    width: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.text-container {
+    padding-left: 20px;
+}
+
+.top-card-title, .top-card-para {
+    font-size: 11px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.top-card-heading {
+    font-size: 22px;
+    font-family: "Bree Serif";
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.bottom-container {
+    padding: 30px 20px;
+}
+
+.episode-card {
+    margin-bottom: 25px;
+}
+
+.top-card-name {
+    color: #151765;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.top-card-description {
+    color: #5a7184;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.top-card-duration {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.button-container {
+    padding: 20px;
+    text-align: right;
+}
+
+.back-button {
+    background-color: #151765;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 30px;
+    font-size: 13px;
+}

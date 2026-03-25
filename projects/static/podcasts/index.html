@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcasts - Static Project</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sectionHomePage">
+        <div class="home-top-container">
+            <h1 class="home-top-heading">Podcasts</h1>
+        </div>
+        <div class="home-bottom-container">
+            <div class="home-card-container d-flex flex-row justify-content-center flex-wrap">
+                <div class="home-card" onclick="display('sectionPuriJagannadhPage')">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="home-card-image" alt="Puri Jagannadh" />
+                    <p class="home-card-name">Puri Jagannadh</p>
+                    <p class="home-card-para">24 Episodes</p>
+                </div>
+                <div class="home-card" onclick="display('sectionTedxPage')">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tedx-img.png" class="home-card-image" alt="Tedx Talks" />
+                    <p class="home-card-name">Tedx talks</p>
+                    <p class="home-card-para">12 Episodes</p>
+                </div>
+                <div class="home-card" onclick="display('sectionSadhguruPage')">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="home-card-image" alt="Sadhguru" />
+                    <p class="home-card-name">Sadhguru</p>
+                    <p class="home-card-para">49 Episodes</p>
+                </div>
+                <div class="home-card" onclick="display('sectionOnPurposePage')">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="home-card-image" alt="On Purpose" />
+                    <p class="home-card-name">On purpose</p>
+                    <p class="home-card-para">49 Episodes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Pages -->
+    <div id="sectionPuriJagannadhPage" style="display: none;">
+        <div class="top-container">
+            <div class="top-card d-flex flex-row">
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="podcast-image">
+                <div class="text-container d-flex flex-column">
+                    <p class="top-card-title">Podcast</p>
+                    <h1 class="top-card-heading">Puri Podcast</h1>
+                    <p class="top-card-para">The Puri Jagannadh Podcast</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="episode-card d-flex flex-row">
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="podcast-image">
+                <div class="text-container d-flex flex-column">
+                    <p class="top-card-name">Molecular Gastronomy</p>
+                    <p class="top-card-description">Anything happens there it will not cook...</p>
+                    <p class="top-card-duration">15 min</p>
+                </div>
+            </div>
+            <!-- More episodes... -->
+        </div>
+        <div class="button-container">
+            <button class="btn back-button" onclick="display('sectionHomePage')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionTedxPage" style="display: none;">
+        <div class="top-container">
+            <div class="top-card d-flex flex-row">
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tedx-img.png" class="podcast-image">
+                <div class="text-container">
+                    <p class="top-card-title">Podcast</p>
+                    <h1 class="top-card-heading">Tedx Talks</h1>
+                    <p class="top-card-para">The Tedx Podcast</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="episode-card d-flex flex-row">
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tedx-img.png" class="podcast-image">
+                <div class="text-container">
+                    <p class="top-card-name">The science of friction</p>
+                    <p class="top-card-description">Tribology: It's a funny sounding word...</p>
+                    <p class="top-card-duration">12 min</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="btn back-button" onclick="display('sectionHomePage')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionSadhguruPage" style="display: none;">
+        <div class="top-container">
+            <div class="top-card d-flex flex-row">
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="podcast-image">
+                <div class="text-container">
+                    <p class="top-card-title">Podcast</p>
+                    <h1 class="top-card-heading">Sadhguru</h1>
+                    <p class="top-card-para">The Sadhguru Podcast</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="btn back-button" onclick="display('sectionHomePage')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionOnPurposePage" style="display: none;">
+        <div class="top-container">
+            <div class="top-card d-flex flex-row">
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="podcast-image">
+                <div class="text-container">
+                    <p class="top-card-title">Podcast</p>
+                    <h1 class="top-card-heading">On Purpose</h1>
+                    <p class="top-card-para">The Jay Shetty Podcast</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="btn back-button" onclick="display('sectionHomePage')">Back</button>
+        </div>
+    </div>
+
+    <!-- UI Kit Script -->
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+    <!-- Robust Manual Toggle Overrides -->
+    <script>
+        window.display = function(sectionId) {
+            // Force hide all sections starting with 'section'
+            const allSections = document.querySelectorAll('[id^="section"]');
+            allSections.forEach(s => s.style.setProperty('display', 'none', 'important'));
+            
+            // Show the requested section
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.style.setProperty('display', 'block', 'important');
+            }
+        };
+    </script>
+
+    <!-- Bootstrap JS dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
