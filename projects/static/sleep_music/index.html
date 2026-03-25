@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Music - Static Project</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Robust Manual Toggle Overrides -->
+    <script>
+        function display(sectionId) {
+            console.log("Navigating to:", sectionId);
+            const sections = ['sectionhomepage', 'sectionmusicpage'];
+            sections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.setProperty('display', 'none', 'important');
+            });
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.style.setProperty('display', 'block', 'important');
+            }
+        }
+        window.display = display; // Ensure global availability
+    </script>
+</head>
+<body>
+    <div id="sectionhomepage">
+        <div class="home-bg-container">
+            <div class="home-text-container">
+                <h1 class="home-text-heading">Sleep Music</h1>
+                <p class="home-text-description">Soothing bedtime music help you fall into a deep and natural sleep</p>
+            </div>
+            <div class="home-bottom-container d-flex flex-column justify-content-center">
+                <div class="home-image-container">
+                    <h1 class="island-title">Night Island</h1>
+                </div>
+                <p class="mixes-description">Non-stop 8-hour mixes of our most popular sleep audio</p>
+                <div>
+                    <button class="btn home-button" onclick="display('sectionmusicpage')">Get started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionmusicpage" style="display: none;">
+        <div class="music-bg-container">
+            <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/clouds-img.png" class="music-top-image" alt="Clouds" />
+            <div class="music-text-container">
+                <h1 class="music-text-heading">Night Island</h1>
+                <p class="music-text-description">Ease the mind into a restful night's sleep with these deep, ambient tones.</p>
+                <p class="music-text-duration">45 MIN SLEEP MUSIC</p>
+                <h1 class="music-text-related">Related</h1>
+            </div>
+            <div class="music-card-container d-flex flex-row">
+                <div class="music-card">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/moon-clouds-img.png" class="music-card-image" alt="Moon Clouds" />
+                    <p class="music-card-description">Moon Clouds</p>
+                    <p class="music-text-duration">55 MIN SLEEP MUSIC</p>
+                </div>
+                <div class="music-card">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/sweet-sleep-img.png" class="music-card-image" alt="Sweet Sleep" />
+                    <p class="music-card-description">Sweet Sleep</p>
+                    <p class="music-text-duration">60 MIN SLEEP MUSIC</p>
+                </div>
+            </div>
+            <div class="button-footer">
+                <button class="btn music-button" onclick="display('sectionhomepage')">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- UI Kit Script -->
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+    
+    <!-- Bootstrap JS dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

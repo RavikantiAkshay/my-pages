@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Bree Serif", serif;
+}
+
+.home-bg-container {
+    background-image: url("https://new-assets.ccbp.in/frontend/static-website/moon-stars-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.home-text-container {
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.home-text-heading {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.home-text-description {
+    font-size: 13px;
+    opacity: 0.9;
+    font-family: "Roboto";
+}
+
+.home-bottom-container {
+    color: white;
+    margin: 0 25px;
+    text-align: center;
+}
+
+.home-image-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/moon-bg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    color: #ffe7bf;
+}
+
+.island-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.mixes-description {
+    font-size: 14px;
+    font-family: "Roboto";
+    margin-bottom: 20px;
+}
+
+.home-button {
+    background-color: #8e97fd;
+    border-radius: 24px;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.music-bg-container {
+    background-color: #03174c;
+    min-height: 100vh;
+}
+
+.music-top-image {
+    height: 38vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.music-text-container {
+    padding: 20px;
+}
+
+.music-text-heading {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.music-text-description {
+    color: #98a1bd;
+    font-size: 13px;
+    font-family: "Roboto";
+    margin-bottom: 12px;
+}
+
+.music-text-duration {
+    color: #98a1bd;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+}
+
+.music-text-related {
+    font-size: 20px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.music-card-container {
+    padding: 0 20px;
+    overflow-x: auto;
+}
+
+.music-card {
+    margin-right: 15px;
+    min-width: 140px;
+}
+
+.music-card-image {
+    height: 110px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.music-card-description {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.button-footer {
+    padding: 30px 20px;
+}
+
+.music-button {
+    background-color: #8e97fd;
+    border-radius: 24px;
+    color: white;
+    padding: 6px 35px;
+    border: none;
+    font-size: 14px;
+}
