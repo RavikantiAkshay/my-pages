@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Bree Serif", serif;
+    background-color: #1b1b1b;
+}
+
+.home-bg-container {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 20px;
+}
+
+.home-top-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.home-top-card-container {
+    background-color: #e6f6ff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.home-top-image {
+    height: 180px;
+    width: 130px;
+    object-fit: cover;
+}
+
+.home-top-text-container {
+    padding: 15px;
+    flex: 1;
+}
+
+.home-top-title {
+    color: #183b56;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.home-top-description {
+    color: #4b6b85;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: "Roboto";
+}
+
+.home-top-name {
+    color: #7b8ea0;
+    font-size: 11px;
+    margin-bottom: 10px;
+    font-family: "Roboto";
+}
+
+.home-button {
+    font-family: "Roboto";
+    font-size: 12px;
+    border-radius: 18px;
+    padding: 4px 18px;
+}
+
+.home-bottom-heading {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.home-bottom-card-container {
+    margin-bottom: 20px;
+    background-color: #262626;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.home-bottom-image {
+    height: 120px;
+    width: 90px;
+    object-fit: cover;
+}
+
+.home-bottom-text-container {
+    padding: 10px 15px;
+    flex: 1;
+}
+
+.home-bottom-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.home-bottom-description, .home-bottom-name {
+    color: #9aa5b1;
+    font-size: 12px;
+    margin-bottom: 2px;
+    font-family: "Roboto";
+}
+
+/* Detail Pages */
+.bg-container {
+    background-color: #1b1b1b;
+    color: white;
+    min-height: 100vh;
+}
+
+.card-image {
+    height: 40vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin: 30px auto;
+}
+
+.card-heading {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.card-name {
+    font-size: 13px;
+    color: #9aa5b1;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    color: #cbd5e1;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "Roboto";
+    text-align: justify;
+}
+
+.button-footer-container {
+    padding: 30px 20px;
+}
+
+.button-element {
+    font-size: 14px;
+    margin: 5px;
+    padding: 6px 25px;
+    border-radius: 20px;
+}
