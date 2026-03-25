@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Bree Serif", serif;
+}
+
+.home-bg-container {
+    background-color: #f1f5f9;
+    min-height: 100vh;
+}
+
+.home-top-image {
+    height: 30vh;
+    margin-top: 30px;
+}
+
+.home-top-container {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.home-top-heading {
+    font-size: 24px;
+    color: #183b56;
+    margin-top: 15px;
+}
+
+.home-top-description {
+    font-size: 14px;
+    color: #616e7c;
+    font-family: "Roboto";
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+.home-bottom-container {
+    padding: 20px;
+}
+
+.home-bottom-image {
+    height: 100px;
+    width: 140px;
+    margin: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    object-fit: cover;
+}
+
+.home-bottom-image:hover {
+    transform: scale(1.05);
+}
+
+/* Section 1: Advanced Technologies */
+.first-bg-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/arvrbg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.first-card-container {
+    background-color: white;
+    padding: 30px 20px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.first-main-heading {
+    color: #5752ab;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.first-description {
+    color: #323f4b;
+    font-size: 15px;
+    font-family: "Roboto";
+    margin-bottom: 25px;
+}
+
+.first-button1 {
+    background-color: #ffffff;
+    color: #171f46;
+    border: 1px solid #d7dfe9;
+    padding: 8px 24px;
+    font-size: 13px;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+/* Section 2: Diwali */
+.diwali-top-section {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/diwali-bg.png");
+    height: 35vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.diwali-top-section-heading {
+    color: white;
+    font-family: "Caveat", cursive;
+    font-size: 42px;
+    padding: 30px;
+    line-height: 1.2;
+}
+
+.diwali-bottom-section {
+    background-color: #e6f6ff;
+    padding: 30px 10px;
+    min-height: 65vh;
+}
+
+.diwali-card-item {
+    text-align: center;
+    background-color: white;
+    width: 150px;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.diwali-card-image {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 12px;
+}
+
+.diwali-card-name {
+    color: #616e7c;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+.diwali-card-price {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Section 3: Happy Meals */
+.third-tomato {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/foodbg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.third-card {
+    background-color: #f6c56e;
+    padding: 35px 25px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+
+.third-potatoHeading {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.third-para {
+    font-family: "Roboto";
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.third-button {
+    background-color: white;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+/* Section 4: NEWS */
+.fourth-bg-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/newsbg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.fourth-card-container {
+    background-color: white;
+    padding: 30px 20px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.fourth-card-title {
+    color: #7b8794;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: "Roboto";
+}
+
+.fourth-card-heading {
+    color: #1e293b;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.fourth-card-description {
+    color: #64748b;
+    font-size: 13px;
+    font-family: "Roboto";
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.fourth-card-button {
+    background-color: #323f4b;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+.fourth-button {
+    font-size: 12px;
+}

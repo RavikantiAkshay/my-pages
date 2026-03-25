@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Showcase - Static Project</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Robust Manual Toggle Overrides -->
+    <script>
+        function display(sectionId) {
+            console.log("Navigating to:", sectionId);
+            const sections = ['sectionhomepage', 'sectionfirstpage', 'sectionsecondpage', 'sectionthirdpage', 'sectionfourthpage'];
+            sections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.setProperty('display', 'none', 'important');
+            });
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.style.setProperty('display', 'block', 'important');
+            }
+        }
+        window.display = display; // Ensure global availability
+    </script>
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="sectionhomepage">
+        <div class="home-bg-container">
+            <div class="home-top-container d-flex flex-row justify-content-center">
+                <div class="home-top-card text-center">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/software-developer-img.png" class="home-top-image" alt="Developer" />
+                    <h1 class="home-top-heading">My Projects</h1>
+                    <p class="home-top-description">These are a few of my Static Website projects that I have developed using HTML, CSS and Bootstrap</p>
+                </div>
+            </div>
+            <div class="home-bottom-container">
+                <div class="home-image-container d-flex flex-row justify-content-center">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" class="home-bottom-image" onclick="display('sectionfirstpage')" alt="Project 1" />
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/diwali-img.png" class="home-bottom-image" onclick="display('sectionsecondpage')" alt="Project 2" />
+                </div>
+                <div class="home-image-container d-flex flex-row justify-content-center">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/food-img.png" class="home-bottom-image" onclick="display('sectionthirdpage')" alt="Project 3" />
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/news-paper-img.png" class="home-bottom-image" onclick="display('sectionfourthpage')" alt="Project 4" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 1: Advanced Tech -->
+    <div id="sectionfirstpage" style="display: none;">
+        <div class="first-bg-container d-flex flex-column justify-content-end">
+            <div class="first-card-container">
+                <h1 class="first-main-heading">Advanced Technologies</h1>
+                <p class="first-description">Machinery and equipment developed from the application of scientific knowledge.</p>
+                <div class="first-button-container d-flex flex-row">
+                    <button class="first-button1 btn">Learn More</button>
+                    <button class="btn btn-primary" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2: Diwali -->
+    <div id="sectionsecondpage" style="display: none;">
+        <div class="diwali-top-section">
+            <h1 class="diwali-top-section-heading">Celebrate Diwali with your friends</h1>
+        </div>
+        <div class="diwali-bottom-section">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="diwali-card-item">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/lamp-img.png" class="diwali-card-image" alt="Lamp" />
+                    <h1 class="diwali-card-name">Diwali Air Balloon</h1>
+                    <p class="diwali-card-price">Rs 369</p>
+                </div>
+                <div class="diwali-card-item">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/diya-img.png" class="diwali-card-image" alt="Diya" />
+                    <h1 class="diwali-card-name">Diwali - Lamp</h1>
+                    <p class="diwali-card-price">Rs 50</p>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <div class="diwali-card-item">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/firework-img.png" class="diwali-card-image" alt="Sparklers" />
+                    <h1 class="diwali-card-name">Sparklers</h1>
+                    <p class="diwali-card-price">Rs 150</p>
+                </div>
+                <div class="diwali-card-item">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/firecracker-img.png" class="diwali-card-image" alt="Fire Cracker" />
+                    <h1 class="diwali-card-name">Fire Cracker</h1>
+                    <p class="diwali-card-price">Rs 560</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <button class="btn btn-primary" onclick="display('sectionhomepage')">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3: Happy Meals -->
+    <div id="sectionthirdpage" style="display: none;">
+        <div class="third-tomato d-flex flex-column justify-content-end">
+            <div class="third-card">
+                <h1 class="third-potatoHeading">Happy Meals</h1>
+                <p class="third-para">Discover the best foods over the 1,000 restaurants</p>
+                <div class="d-flex flex-row">
+                    <button class="btn third-button">Book Now</button>
+                    <button class="btn btn-primary" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 4: NEWS -->
+    <div id="sectionfourthpage" style="display: none;">
+        <div class="fourth-bg-container d-flex flex-column justify-content-end">
+            <div class="fourth-card-container">
+                <p class="fourth-card-title">NEWS OF THE DAY</p>
+                <h1 class="fourth-card-heading">iB Cricket announces world's first Virtual Reality Cricket League</h1>
+                <p class="fourth-card-description">iB Cricket and Viu together have announced the World's first virtual reality cricket
+                    league featuring 12 international cricketers...</p>
+                <div class="d-flex flex-row">
+                    <button class="btn fourth-card-button">Read More</button>
+                    <button class="btn btn-primary fourth-button" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UI Kit Script -->
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+    
+    <!-- Bootstrap JS dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
