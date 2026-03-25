@@ -21,10 +21,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-link active" id="navItem1" href="#wcuSection">Why Choose Us?</a>
-            <a class="nav-link" href="#exploreMenuSection" id="navItem2">Explore Menu</a>
-            <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Delivery & Payment</a>
-            <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+            <a class="nav-link active" id="navItem1" href="javascript:void(0)" onclick="window.scrollTo({top:document.getElementById('wcuSection').offsetTop-70,behavior:'smooth'})">Why Choose Us?</a>
+            <a class="nav-link" id="navItem2" href="javascript:void(0)" onclick="window.scrollTo({top:document.getElementById('exploreMenuSection').offsetTop-70,behavior:'smooth'})">Explore Menu</a>
+            <a class="nav-link" id="navItem3" href="javascript:void(0)" onclick="window.scrollTo({top:document.getElementById('deliveryPaymentSection').offsetTop-70,behavior:'smooth'})">Delivery & Payment</a>
+            <a class="nav-link" id="navItem4" href="javascript:void(0)" onclick="window.scrollTo({top:document.getElementById('followUsSection').offsetTop-70,behavior:'smooth'})">Follow Us</a>
           </div>
         </div>
       </div>
@@ -192,5 +192,19 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      // Intercept all anchor clicks to keep scrolling inside this iframe
+      document.addEventListener('click', function(e) {
+        var anchor = e.target.closest('a');
+        if (anchor && anchor.getAttribute('href') && anchor.getAttribute('href').startsWith('#')) {
+          e.preventDefault();
+          var targetId = anchor.getAttribute('href').substring(1);
+          var targetEl = document.getElementById(targetId);
+          if (targetEl) {
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    </script>
 </body>
 </html>
