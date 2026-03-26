@@ -490,12 +490,30 @@ body {
 .main-dashboard-card {
     flex-grow: 1;
 }
+/* ========== Browser Frame Controls & Dots ========== */
+.browser-frame-controls {
+    flex-shrink: 0;
+    background: #1a1a1a;
+    padding: 14px 20px; /* Increased to clear border-radius clipping */
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.browser-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.browser-dot.red { background: #ff5f56; }
+.browser-dot.yellow { background: #ffbd2e; }
+.browser-dot.green { background: #27c93f; }
+
 .main-dashboard-card .browser-frame {
     height: 520px;
     background: #fff;
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: none !important; /* Removed white lines */
     box-shadow: 0 30px 60px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
@@ -505,7 +523,7 @@ body {
 .main-dashboard-card .browser-frame iframe { 
     flex-grow: 1; 
     width: 100%; 
-    height: 100%; /* Fallback */
+    height: 100%;
     border: none; 
     background: #fff;
     display: block;
@@ -530,7 +548,7 @@ body {
     background: #000;
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: none !important; /* Removed white lines */
     box-shadow: 0 30px 60px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
@@ -543,14 +561,11 @@ body {
     padding: 0 !important;
     margin: 0 !important;
     overflow: hidden;
+    background: #000;
 }
+/* Re-specifying for meds to ensure background mask */
 .responsive-dual-row .browser-frame-controls {
-    flex-shrink: 0;
     background: #1a1a1a;
-    padding: 10px 16px;
-    display: flex;
-    gap: 8px;
-    border-bottom: 1px solid rgba(255,255,255,0.05); /* Visual separator */
 }
 .responsive-dual-row .iframe-wrapper {
     flex-grow: 1;
@@ -595,7 +610,7 @@ body {
     height: 400px;
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: none !important; /* Removed white lines */
     box-shadow: 0 40px 100px rgba(0,0,0,0.8);
     top: 50%;
 }
