@@ -566,105 +566,73 @@ body {
     display: block;
 }
 
-/* ========== Dynamic Components — 100vw Panoramic ========== */
-.dynamic-project-row {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding: 60px;
-    box-sizing: border-box;
-    background: radial-gradient(circle at 80% 50%, rgba(0,218,243,0.03) 0%, rgba(0,0,0,0) 70%);
-}
-.dynamic-project-row.reverse { 
-    flex-direction: row-reverse; 
-    background: radial-gradient(circle at 20% 50%, rgba(0,218,243,0.03) 0%, rgba(0,0,0,0) 70%);
+/* ========== Dynamic Components — Phone Stand Grid ========== */
+.dynamic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px 40px; /* Large vertical gap to allow for popping phones */
+    padding: 100px 0;
+    width: 100%;
 }
 
-.dynamic-dual-row {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding: 60px;
-    box-sizing: border-box;
-    background: #000;
-}
-
-.dynamic-mobile-panel {
+.phone-stand-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    position: relative;
+    perspective: 1000px;
+}
+
+.phone-wrapper {
+    position: relative;
+    z-index: 2;
+    transform: translateY(0); /* Clean 2D */
+    transition: none; /* User said NO hover effects */
 }
 
 .mobile-phone.mini {
-    transform: scale(0.9);
-    height: 480px; /* Slightly shorter */
+    width: 350px;
+    height: 700px;
+    transform: none;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.5);
 }
 
-.dynamic-info-card {
-    flex: 1;
-    padding: 48px;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
+.stand-base {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 32px;
+    padding: 380px 30px 60px; /* Space for the 700px phone to overlap */
+    margin-top: -350px; /* Strong recessing for the stand effect */
+    text-align: center;
+    backdrop-filter: blur(25px);
 }
-.dynamic-info-card .project-num {
-    font-size: 80px;
-    font-weight: 900;
-    line-height: 1;
-    opacity: 0.1;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: var(--tertiary);
-}
-.dynamic-info-card .project-title {
-    font-size: 32px;
+
+.stand-title {
+    font-size: 22px;
     font-weight: 700;
-    margin-bottom: 20px;
-}
-.dynamic-info-card .project-desc {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #888;
-    margin-bottom: 32px;
-    max-width: 500px;
-}
-.dynamic-info-card .project-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.dynamic-info-card .stack-pill {
-    font-size: 11px;
-    padding: 6px 14px;
-    border-radius: 6px;
-    background: rgba(0, 218, 243, 0.05);
     color: var(--tertiary);
-    border: 1px solid rgba(0, 218, 243, 0.1);
-    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.stand-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #aaa;
+    max-width: 280px;
+    margin: 0 auto;
 }
 
 @media (max-width: 1100px) {
-    .dynamic-project-row {
-        flex-direction: column-reverse;
-        padding: 40px 20px;
-        width: 100%;
-        margin-left: 0; margin-right: 0; left: 0; right: 0;
+    .dynamic-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .dynamic-info-card { padding: 32px 20px; width: 100%; }
+}
+
+@media (max-width: 768px) {
+    .dynamic-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 1100px) {
