@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Rest Console</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-container">
+        <div class="container pt-3 pb-3">
+            <div class="row pt-4 pb-4 px-3 d-flex flex-row justify-content-center console-container">
+                <h1 class="col-12 mb-4 text-center heading">REST API CONSOLE</h1>
+                <form id="consoleForm" class="col-12">
+                    <div class="mb-3">
+                        <label class="form-label">Request URL</label>
+                        <input id="requestUrl" class="form-control" type="text" value="https://gorest.co.in/public-api/users" />
+                        <p id="requestUrlErrMsg" class="error-message"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Request Method</label>
+                        <select id="requestMethod" class="form-control">
+                            <option value="POST">POST</option>
+                            <option value="PUT">PUT</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Request Body (JSON)</label>
+                        <textarea id="requestBody" class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-primary btn-block py-2" id="sendRequestBtn">Send Request</button>
+                    </div>
+                </form>
+                <hr class="w-100 my-4">
+                <div class="col-12">
+                    <label class="form-label">Response Status</label>
+                    <input id="responseStatus" class="form-control mb-3" type="text" readonly />
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Response Body</label>
+                    <textarea id="responseBody" class="form-control" rows="5" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
