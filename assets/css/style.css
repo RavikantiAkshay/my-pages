@@ -490,24 +490,6 @@ body {
 .main-dashboard-card {
     flex-grow: 1;
 }
-/* ========== Browser Frame Controls & Dots ========== */
-.browser-frame-controls {
-    flex-shrink: 0;
-    background: #1a1a1a;
-    padding: 14px 20px; /* Increased to clear border-radius clipping */
-    display: flex;
-    gap: 8px;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-.browser-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-.browser-dot.red { background: #ff5f56; }
-.browser-dot.yellow { background: #ffbd2e; }
-.browser-dot.green { background: #27c93f; }
-
 .main-dashboard-card .browser-frame {
     height: 520px;
     background: #fff;
@@ -563,13 +545,10 @@ body {
     overflow: hidden;
     background: #000;
 }
-/* Re-specifying for meds to ensure background mask */
-.responsive-dual-row .browser-frame-controls {
-    background: #1a1a1a;
-}
 .responsive-dual-row .iframe-wrapper {
     flex-grow: 1;
     width: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
     background: #000;
