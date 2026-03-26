@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.bg-container {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://d2clawv67efefq.cloudfront.net/ccbp-dynamic-webapps/numbers-fact-bg.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+.fact-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.user-input {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.fact-box {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+}

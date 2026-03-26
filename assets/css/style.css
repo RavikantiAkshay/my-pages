@@ -586,6 +586,33 @@ body {
     background: radial-gradient(circle at 20% 50%, rgba(0,218,243,0.03) 0%, rgba(0,0,0,0) 70%);
 }
 
+.dynamic-dual-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 60px;
+    box-sizing: border-box;
+    background: #000;
+}
+
+.dynamic-mobile-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-phone.mini {
+    transform: scale(0.9);
+    height: 480px; /* Slightly shorter */
+}
+
 .dynamic-info-card {
     flex: 1;
     padding: 48px;

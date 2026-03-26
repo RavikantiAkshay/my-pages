@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.main-container {
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+}
+
+.wiki-search-header {
+    border: 1px solid #d5cdcd;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.wiki-logo {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.search-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-input {
+    font-size: 18px;
+    border: 1px solid #d5cdcd;
+    border-radius: 24px;
+    padding: 12px 20px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.2);
+}
+
+.search-results {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.result-item {
+    margin-bottom: 32px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.result-item:hover {
+    background: #f8f9fa;
+}
+
+.result-title {
+    font-size: 22px;
+    color: #1a0dab;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.result-title:hover {
+    text-decoration: underline;
+}
+
+.result-url {
+    color: #006621;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin: 4px 0;
+}
+
+.link-description {
+    color: #4c4c4c;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 8px;
+}
