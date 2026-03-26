@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding-top: 56px;
+    background-color: #191a1d;
+    color: white;
+}
+
+/* Navbar */
+.nav-bar-logo {
+    border: 3px solid #4b6cc1;
+    padding: 2px 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white !important;
+}
+
+/* Banner */
+.banner-section-bg-container {
+    background-color: #191a1d;
+    min-height: 90vh;
+    padding: 100px 0;
+}
+.main-heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.main-name {
+    color: #4b6cc1;
+}
+.main-para {
+    color: #9aa5b1;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.main-button {
+    background-color: #4b6cc1;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+}
+.main-image {
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Common Headings */
+.top-heading {
+    color: #cced00;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.about-me-heading {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.section-description {
+    color: #9aa5b1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Sections */
+.about-me-section { background-color: #323f4b; }
+.projects-section { background-color: #3e4c59; }
+.services-section { background-color: #52606d; }
+.stats-section { 
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-work-done-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+.testimonial-section { background-color: #1f2933; }
+.contact-section { background-color: #0d2436; }
+
+/* Skills */
+.skill-card {
+    background-color: #323f4b;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+.skill-img {
+    width: 60px;
+    margin-bottom: 12px;
+}
+.skill-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #323f4b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.project-category {
+    color: #9aa5b1;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.project-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.project-description {
+    color: #9aa5b1;
+    font-size: 16px;
+}
+.project-link {
+    color: #cced00;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Service Cards */
+.service-card {
+    background-color: #323f4b;
+    border-radius: 10px;
+    height: 100%;
+}
+.service-icon {
+    width: 60px;
+}
+.service-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+.service-description {
+    color: #9aa5b1;
+}
+
+/* Stats */
+.stat-card {
+    padding: 20px 0;
+}
+.stat-value {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+.stat-label {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background-color: #323f4b;
+    border-radius: 12px;
+}
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.testimonial-text {
+    color: #9aa5b1;
+    font-style: italic;
+    font-size: 18px;
+}
+.testimonial-author {
+    font-weight: bold;
+    color: white;
+}
+
+/* Contact */
+.contact-profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.contact-name {
+    font-size: 20px;
+    color: #cced00;
+    margin-bottom: 0;
+}
+.contact-role {
+    color: #9aa5b1;
+    margin-bottom: 0;
+}
+.contact-heading {
+    color: #cced00;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact-info {
+    color: #9aa5b1;
+    margin-bottom: 0;
+}
+.footer-copyright {
+    color: #9aa5b1;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .main-heading { font-size: 36px; }
+    .about-me-heading { font-size: 30px; }
+    .banner-section-bg-container { padding: 40px 0; }
+    .main-image { width: 100%; margin-bottom: 30px; }
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Ravikanti - Portfolio Assembly</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/86aca8b955.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand nav-bar-logo" href="#">AR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active text-white" href="javascript:void(0)" onclick="window.scrollTo({top:0, behavior:'smooth'})">Home</a>
+                    <a class="nav-link text-white" href="javascript:void(0)" onclick="window.scrollTo({top:document.getElementById('aboutMeSection').offsetTop-70, behavior:'smooth'})">About Me</a>
+                    <a class="nav-link text-white" href="javascript:void(0)" onclick="window.scrollTo({top:document.getElementById('projectsSection').offsetTop-70, behavior:'smooth'})">Projects</a>
+                    <a class="nav-link text-white" href="javascript:void(0)" onclick="window.scrollTo({top:document.getElementById('blogsSection').offsetTop-70, behavior:'smooth'})">Recent Blogs</a>
+                    <a class="nav-link text-white" href="javascript:void(0)" onclick="window.scrollTo({top:document.getElementById('testimonialSection').offsetTop-70, behavior:'smooth'})">Testimonial</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="banner-section-bg-container container-fluid d-flex flex-column justify-content-center" id="homeSection">
+        <div class="row align-items-center">
+            <div class="image-container col-12 col-md-5 order-1 order-md-2 text-center">
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-banner-img.png" class="main-image" alt="Akshay Banner" />
+            </div>
+            <div class="col-12 col-md-7 order-2 order-md-1 d-flex flex-column justify-content-center">
+                <div class="text-container pl-md-5">
+                    <h1 class="main-heading">Hey, I am <span class="main-name">Akshay</span></h1>
+                    <p class="main-para">I am a Frontend Developer & Mentor</p>
+                    <button class="main-button btn">Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me & Skills Section -->
+    <div class="about-me-section pt-5 pb-5" id="aboutMeSection">
+        <div class="container text-center text-md-left">
+            <div class="row align-items-center">
+                <div class="col-6 order-2 order-md-1 d-none d-md-inline">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" class="img-fluid" />
+                </div>
+                <div class="col-12 col-md-6 order-1 order-md-2">
+                    <h1 class="top-heading">Facts</h1>
+                    <h1 class="about-me-heading">About Me</h1>
+                    <div class="d-md-none mb-3">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" class="img-fluid w-75" />
+                    </div>
+                    <p class="section-description">
+                        My name is Akshay Ravikanti, and I am currently looking for a job in Frontend Development. I have 3 years of experience working as a Frontend Developer. I have a bachelor's degree in Electronics and Communication. People find me to be an upbeat, self-motivated team player with excellent communication skills.
+                    </p>
+                    <p class="section-description">
+                        I am a dedicated person with a family of four. I enjoy reading, and the knowledge and perspective that my reading have strengthened my teaching skills and presentation abilities.
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-12">
+                    <h1 class="top-heading mb-4">Skills:</h1>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-card shadow-sm p-4 mb-3">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-html-img.png" class="skill-img" />
+                        <p class="skill-name">HTML</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-card shadow-sm p-4 mb-3">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-css-img.png" class="skill-img" />
+                        <p class="skill-name">CSS</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-card shadow-sm p-4 mb-3">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-bootstrap-img.png" class="skill-img" />
+                        <p class="skill-name">Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-card shadow-sm p-4 mb-3">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png" class="skill-img" />
+                        <p class="skill-name">JS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects-section pt-5 pb-5" id="projectsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="top-heading">Portfolio</h1>
+                    <h1 class="about-me-heading">Projects I have done</h1>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="project-card shadow-sm">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-project-1-img.png" class="w-100" />
+                        <div class="p-4">
+                            <p class="project-category">Web design</p>
+                            <h1 class="project-title">Royal Grand Hotel</h1>
+                            <p class="project-description">Royal Grand Hotel is a Simple Static Website. We can use this layout for building other websites...</p>
+                            <a href="#" class="project-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="project-card shadow-sm">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-project-2-img.png" class="w-100" />
+                        <div class="p-4">
+                            <p class="project-category">Web design</p>
+                            <h1 class="project-title">Happy Meals</h1>
+                            <p class="project-description">Happy Meals is the best-in-class food ordering page today. With interactive UI/UX and simple call to actions...</p>
+                            <a href="#" class="project-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="top-heading">Services</h1>
+                    <h1 class="about-me-heading">What I do</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="service-card p-4 shadow-sm">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-web-design-img.png" class="service-icon mb-3" />
+                        <h1 class="service-title">Static Websites</h1>
+                        <p class="service-description">A Static Website contains Web pages with fixed content. Each page is developed using HTML and CSS.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="service-card p-4 shadow-sm">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-web-development-img.png" class="service-icon mb-3" />
+                        <h1 class="service-title">Responsive Web design</h1>
+                        <p class="service-description">Design and development should respond to the user's behavior and environment based on screen size.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="service-card p-4 shadow-sm">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-customize-img.png" class="service-icon mb-3" />
+                        <h1 class="service-title">Customisable Layouts</h1>
+                        <p class="service-description">Templates with set layouts where you can change photos and colors to match your brand identity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-section pt-5 pb-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-4">
+                    <div class="stat-card">
+                        <span class="material-symbols-outlined text-4xl mb-2">thumb_up</span>
+                        <hr class="w-50 mx-auto border-white" />
+                        <h1 class="stat-value">10</h1>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="stat-card">
+                        <span class="material-symbols-outlined text-4xl mb-2">format_list_bulleted</span>
+                        <hr class="w-50 mx-auto border-white" />
+                        <h1 class="stat-value">2,800</h1>
+                        <p class="stat-label">Lines of Code</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="stat-card">
+                        <span class="material-symbols-outlined text-4xl mb-2">schedule</span>
+                        <hr class="w-50 mx-auto border-white" />
+                        <h1 class="stat-value">15</h1>
+                        <p class="stat-label">Hours Worked</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonial-section pt-5 pb-5" id="testimonialSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="top-heading">Testimonials</h1>
+                    <h1 class="about-me-heading">Our Members Say</h1>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active text-center p-5">
+                                <div class="testimonial-card p-4">
+                                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-1-img.png" class="testimonial-img mb-3" />
+                                    <p class="testimonial-text">Jenny is one of the best hardworking developers, and it was a pleasure working with him. Having him on the project certainly made everything run smoother.</p>
+                                    <p class="testimonial-author">-Gautham, Founder of CocoPay Company</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item text-center p-5">
+                                <div class="testimonial-card p-4">
+                                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-2-img.png" class="testimonial-img mb-3" />
+                                    <p class="testimonial-text">Excellent communication skills and technical depth. A great addition to any frontend project.</p>
+                                    <p class="testimonial-author">-Sarah, Product Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section pt-5 pb-5" id="footerSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="contact-profile-card d-flex flex-row align-items-center">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" class="contact-profile-img" />
+                        <div class="ml-3">
+                            <h1 class="contact-name">Jenny</h1>
+                            <p class="contact-role">Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <h1 class="contact-heading">Phone No.</h1>
+                    <div class="d-flex flex-row align-items-center">
+                        <i class="fas fa-phone mr-2"></i>
+                        <p class="contact-info">986543210</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <h1 class="contact-heading">E-mail</h1>
+                    <div class="d-flex flex-row align-items-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <p class="contact-info">jenny3@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <h1 class="contact-heading">Address</h1>
+                    <div class="d-flex flex-row align-items-center">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <p class="contact-info">17 Ayur Vigyan Nagar, New Delhi, India.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 border-top border-secondary pt-4 text-center">
+                    <p class="footer-copyright">&copy; 2020 by Jenny Wilson. Created with Bootstrap.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
