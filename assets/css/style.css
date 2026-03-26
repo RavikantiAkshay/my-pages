@@ -571,7 +571,6 @@ body {
     display: flex;
     align-items: center;
     gap: 60px;
-    margin-bottom: 80px;
     width: 100vw;
     position: relative;
     left: 50%;
@@ -581,6 +580,10 @@ body {
     padding: 60px;
     box-sizing: border-box;
     background: radial-gradient(circle at 80% 50%, rgba(0,218,243,0.03) 0%, rgba(0,0,0,0) 70%);
+}
+.dynamic-project-row.reverse { 
+    flex-direction: row-reverse; 
+    background: radial-gradient(circle at 20% 50%, rgba(0,218,243,0.03) 0%, rgba(0,0,0,0) 70%);
 }
 
 .dynamic-info-card {
