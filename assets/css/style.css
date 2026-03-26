@@ -170,5 +170,214 @@ body {
     pointer-events: auto;
 }
 
+/* Category Showcase Cards — Full Bleed */
+.category-card {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    border: none;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.category-card.reverse { flex-direction: row-reverse; }
+
+.category-text {
+    flex: 0 0 38%;
+    padding: 64px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.category-number {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+.category-name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.category-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    opacity: 0.8;
+}
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.category-tag {
+    font-size: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Phone Gallery */
+.phone-gallery {
+    flex: 0 0 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 56px 40px;
+    min-height: 480px;
+    position: relative;
+}
+
+.phone-mockup {
+    width: 180px;
+    height: 360px;
+    background: #000;
+    border: 5px solid #333;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+    transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    flex-shrink: 0;
+    position: relative;
+}
+.phone-mockup::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 5px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    z-index: 2;
+}
+.phone-mockup iframe {
+    width: 360px;
+    height: 640px;
+    border: none;
+    transform: scale(0.5);
+    transform-origin: top left;
+    pointer-events: auto;
+}
+
+/* ========== Per-Category Themes ========== */
+
+/* 01 — Lifestyle & Wellness: Zen greens */
+.cat-wellness { background: linear-gradient(135deg, #0a1a12 0%, #0d2818 40%, #112d1b 100%); }
+.cat-wellness .category-number { color: #5cdb95; }
+.cat-wellness .category-name { color: #a8f0c8; }
+.cat-wellness .category-desc { color: #7fbf9e; }
+.cat-wellness .category-tag { background: rgba(92, 219, 149, 0.12); color: #5cdb95; border: 1px solid rgba(92, 219, 149, 0.25); }
+.cat-wellness .phone-gallery { background: radial-gradient(ellipse at center, rgba(92, 219, 149, 0.06) 0%, transparent 70%); }
+.cat-wellness .phone-mockup { border-color: #1a3a28; }
+.cat-wellness .phone-mockup:nth-child(1) { transform: rotate(-4deg) translateY(20px); }
+.cat-wellness .phone-mockup:nth-child(2) { transform: rotate(0deg) translateY(-12px); }
+.cat-wellness .phone-mockup:nth-child(3) { transform: rotate(4deg) translateY(20px); }
+
+/* 02 — Entertainment & Media: Vibrant amber */
+.cat-entertainment { background: linear-gradient(135deg, #1a1008 0%, #231507 40%, #2a180a 100%); }
+.cat-entertainment .category-number { color: #ffb347; }
+.cat-entertainment .category-name { color: #ffd699; }
+.cat-entertainment .category-desc { color: #c9a06c; }
+.cat-entertainment .category-tag { background: rgba(255, 179, 71, 0.12); color: #ffb347; border: 1px solid rgba(255, 179, 71, 0.25); }
+.cat-entertainment .phone-gallery { background: radial-gradient(ellipse at 30% 50%, rgba(255, 179, 71, 0.05) 0%, transparent 65%); }
+.cat-entertainment .phone-mockup { border-color: #3a2a14; }
+.cat-entertainment .phone-mockup:nth-child(1) { transform: rotate(5deg) translateY(15px); }
+.cat-entertainment .phone-mockup:nth-child(2) { transform: rotate(1deg) translateY(-10px); }
+.cat-entertainment .phone-mockup:nth-child(3) { transform: rotate(-3deg) translateY(8px); }
+.cat-entertainment .phone-mockup:nth-child(4) { transform: rotate(-7deg) translateY(-5px); }
+
+/* 03 — Tech & Innovation: Electric cyan */
+.cat-tech { background: linear-gradient(160deg, #080f14 0%, #0a1520 50%, #0c1a28 100%); }
+.cat-tech .category-number { color: #00daf3; }
+.cat-tech .category-name { color: #80edf9; }
+.cat-tech .category-desc { color: #5aa8b8; }
+.cat-tech .category-tag { background: rgba(0, 218, 243, 0.1); color: #00daf3; border: 1px solid rgba(0, 218, 243, 0.25); }
+.cat-tech .phone-gallery { background: radial-gradient(ellipse at 70% 40%, rgba(0, 218, 243, 0.06) 0%, transparent 60%); }
+.cat-tech .phone-mockup { border-color: #14303a; }
+.cat-tech .phone-mockup:nth-child(1) { transform: rotate(-7deg) translateY(8px) scale(0.95); }
+.cat-tech .phone-mockup:nth-child(2) { transform: rotate(0deg) translateY(-15px) scale(1.05); }
+.cat-tech .phone-mockup:nth-child(3) { transform: rotate(7deg) translateY(8px) scale(0.95); }
+
+/* 04 — Travel & Hospitality: Warm sunset */
+.cat-travel { background: linear-gradient(135deg, #1a0f0a 0%, #241410 40%, #2d1812 100%); }
+.cat-travel .category-number { color: #ff7043; }
+.cat-travel .category-name { color: #ffab91; }
+.cat-travel .category-desc { color: #c48a70; }
+.cat-travel .category-tag { background: rgba(255, 112, 67, 0.12); color: #ff7043; border: 1px solid rgba(255, 112, 67, 0.25); }
+.cat-travel .phone-gallery { background: radial-gradient(ellipse at 60% 70%, rgba(255, 112, 67, 0.06) 0%, transparent 65%); }
+.cat-travel .phone-mockup { border-color: #3a2018; }
+.cat-travel .phone-mockup:nth-child(1) { transform: rotate(3deg) translateY(-10px); }
+.cat-travel .phone-mockup:nth-child(2) { transform: rotate(-2deg) translateY(18px); }
+.cat-travel .phone-mockup:nth-child(3) { transform: rotate(6deg) translateY(-5px); }
+
+/* 05 — Education & Knowledge: Deep indigo */
+.cat-education { background: linear-gradient(135deg, #0e0a1a 0%, #130f22 50%, #1a142d 100%); }
+.cat-education .category-number { color: #b388ff; }
+.cat-education .category-name { color: #d1b3ff; }
+.cat-education .category-desc { color: #9880bf; }
+.cat-education .category-tag { background: rgba(179, 136, 255, 0.12); color: #b388ff; border: 1px solid rgba(179, 136, 255, 0.25); }
+.cat-education .phone-gallery { background: radial-gradient(ellipse at center bottom, rgba(179, 136, 255, 0.06) 0%, transparent 65%); }
+.cat-education .phone-mockup { border-color: #2a1e3f; }
+.cat-education .phone-mockup:nth-child(1) { transform: rotate(-5deg) translateY(14px); }
+.cat-education .phone-mockup:nth-child(2) { transform: rotate(2deg) translateY(-18px); }
+.cat-education .phone-mockup:nth-child(3) { transform: rotate(-3deg) translateY(6px); }
+
+/* 06 — Social & Commerce: Hot pink */
+.cat-social { background: linear-gradient(135deg, #1a0a14 0%, #220e1a 40%, #2d1224 100%); }
+.cat-social .category-number { color: #ff4081; }
+.cat-social .category-name { color: #ff80ab; }
+.cat-social .category-desc { color: #c06088; }
+.cat-social .category-tag { background: rgba(255, 64, 129, 0.12); color: #ff4081; border: 1px solid rgba(255, 64, 129, 0.25); }
+.cat-social .phone-gallery { background: radial-gradient(ellipse at 40% 50%, rgba(255, 64, 129, 0.06) 0%, transparent 65%); }
+.cat-social .phone-mockup { border-color: #3a1428; }
+.cat-social .phone-mockup:nth-child(1) { transform: rotate(6deg) translateY(10px); }
+.cat-social .phone-mockup:nth-child(2) { transform: rotate(-1deg) translateY(-15px); }
+.cat-social .phone-mockup:nth-child(3) { transform: rotate(-5deg) translateY(12px); }
+
+/* 07 — Profiles & Awareness: Bold gold */
+.cat-profiles { background: linear-gradient(160deg, #141008 0%, #1c1810 50%, #231e14 100%); }
+.cat-profiles .category-number { color: #ffd54f; }
+.cat-profiles .category-name { color: #ffe082; }
+.cat-profiles .category-desc { color: #c4a84a; }
+.cat-profiles .category-tag { background: rgba(255, 213, 79, 0.12); color: #ffd54f; border: 1px solid rgba(255, 213, 79, 0.25); }
+.cat-profiles .phone-gallery { background: radial-gradient(ellipse at 50% 30%, rgba(255, 213, 79, 0.06) 0%, transparent 60%); }
+.cat-profiles .phone-mockup { border-color: #3a3018; }
+.cat-profiles .phone-mockup:nth-child(1) { transform: rotate(-3deg) translateY(-8px) scale(0.97); }
+.cat-profiles .phone-mockup:nth-child(2) { transform: rotate(1deg) translateY(12px) scale(1.04); }
+.cat-profiles .phone-mockup:nth-child(3) { transform: rotate(-4deg) translateY(-6px) scale(0.97); }
+
+/* Hover — universal subtle lift */
+.category-card:hover .phone-mockup { filter: brightness(1.08); }
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .category-card, .category-card.reverse { flex-direction: column; }
+    .category-text { flex: none; width: 100%; padding: 40px 32px; }
+    .phone-gallery { flex: none; width: 100%; min-height: 320px; padding: 24px 16px; flex-wrap: wrap; gap: 14px; }
+    .phone-mockup { width: 140px; height: 280px; }
+    .phone-mockup iframe { transform: scale(0.389); }
+}
+@media (max-width: 640px) {
+    .phone-gallery { gap: 10px; padding: 20px 8px; }
+    .phone-mockup { width: 100px; height: 200px; border-width: 3px; border-radius: 16px; }
+    .phone-mockup iframe { transform: scale(0.278); }
+    .phone-mockup::before { width: 20px; height: 3px; top: 3px; }
+    .category-number { font-size: 48px; }
+    .category-name { font-size: 20px; }
+    .category-text { padding: 32px 20px; }
+}
 
 
