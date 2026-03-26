@@ -380,4 +380,131 @@ body {
     .category-text { padding: 32px 20px; }
 }
 
+/* ========== Responsive Showcase — Split Panel ========== */
+.responsive-showcase {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    border: none;
+    overflow: hidden;
+    min-height: 500px;
+    background: #141414;
+}
+.responsive-showcase.reverse { flex-direction: row-reverse; }
 
+.responsive-info {
+    flex: 0 0 35%;
+    padding: 56px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.responsive-info .project-num {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1;
+    opacity: 0.12;
+    position: absolute;
+    top: 40px;
+    left: 48px;
+}
+.responsive-info .project-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #e0e0e0;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+}
+.responsive-info .project-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #888;
+    margin-bottom: 24px;
+}
+.responsive-info .project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.responsive-info .stack-pill {
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.04);
+    color: #999;
+    border: 1px solid rgba(255,255,255,0.06);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.responsive-info .project-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.responsive-info .feature-tag {
+    font-size: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.responsive-preview {
+    flex: 0 0 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.responsive-preview .browser-frame {
+    width: 100%;
+    height: 440px;
+    margin: 0;
+}
+
+/* Per-Project Accents */
+.rp-food { border-top: 1px solid rgba(70, 245, 224, 0.1); }
+.rp-food .project-num { color: #46f5e0; }
+.rp-food .feature-tag { background: rgba(70, 245, 224, 0.08); color: #46f5e0; border: 1px solid rgba(70, 245, 224, 0.15); }
+.rp-food .responsive-preview { background: rgba(70, 245, 224, 0.02); }
+
+.rp-vr { background: #161616; border-top: 1px solid rgba(0, 218, 243, 0.1); }
+.rp-vr .project-num { color: #00daf3; }
+.rp-vr .feature-tag { background: rgba(0, 218, 243, 0.08); color: #00daf3; border: 1px solid rgba(0, 218, 243, 0.15); }
+.rp-vr .responsive-preview { background: rgba(0, 218, 243, 0.02); }
+
+.rp-portfolio { border-top: 1px solid rgba(218, 185, 255, 0.1); }
+.rp-portfolio .project-num { color: #dab9ff; }
+.rp-portfolio .feature-tag { background: rgba(218, 185, 255, 0.08); color: #dab9ff; border: 1px solid rgba(218, 185, 255, 0.15); }
+.rp-portfolio .responsive-preview { background: rgba(218, 185, 255, 0.02); }
+
+.rp-ecommerce { background: #161616; border-top: 1px solid rgba(70, 245, 224, 0.1); }
+.rp-ecommerce .project-num { color: #46f5e0; }
+.rp-ecommerce .feature-tag { background: rgba(70, 245, 224, 0.08); color: #46f5e0; border: 1px solid rgba(70, 245, 224, 0.15); }
+.rp-ecommerce .responsive-preview { background: rgba(70, 245, 224, 0.02); }
+
+/* Responsive Showcase — Mobile */
+@media (max-width: 1024px) {
+    .responsive-showcase, .responsive-showcase.reverse { flex-direction: column; }
+    .responsive-info { flex: none; width: 100%; padding: 40px 32px; }
+    .responsive-preview { flex: none; width: 100%; padding: 24px 16px; }
+    .responsive-preview .browser-frame { height: 350px; }
+    .responsive-info .project-num { font-size: 60px; top: 24px; left: 32px; }
+}
+@media (max-width: 640px) {
+    .responsive-info { padding: 32px 20px; }
+    .responsive-info .project-title { font-size: 22px; }
+    .responsive-info .project-num { font-size: 48px; }
+    .responsive-preview .browser-frame { height: 260px; }
+}
