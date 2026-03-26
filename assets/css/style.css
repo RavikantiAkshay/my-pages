@@ -470,7 +470,7 @@ body {
 
 .mobile-phone {
     width: 280px;
-    height: 520px;
+    height: 520px; /* Reference height */
     background: #000;
     border-radius: 36px;
     border: 10px solid #1a1a1a;
@@ -491,7 +491,7 @@ body {
     flex-grow: 1;
 }
 .main-dashboard-card .browser-frame {
-    height: 600px;
+    height: 520px; /* Same as mobile-phone 520px */
     background: #121212;
     border-radius: 16px;
     overflow: hidden;
@@ -523,7 +523,7 @@ body {
     box-shadow: 0 30px 60px rgba(0,0,0,0.4);
 }
 .responsive-dual-row .browser-frame {
-    height: 450px; /* Shorter as requested */
+    height: 380px; /* Reduced to eliminate white gaps at scale */
     display: flex;
     flex-direction: column;
 }
@@ -538,7 +538,7 @@ body {
     height: 200%;
     border: none;
     background: #fff;
-    transform: scale(0.5); /* Zoomed out effect */
+    transform: scale(0.5);
     transform-origin: 0 0;
     position: absolute;
     top: 0;
