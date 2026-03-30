@@ -1,10 +1,10 @@
-# My Pages Collection
+# Dev Archive | Akshay Ravikanti
 
-A curated "showcase" gallery of personal mini-projects, basic web pages, and developmental experiments. This repository serves as a record of progress across various disciplines of frontend web development, from pure static structures to complex, logic-driven dynamic interfaces.
+A curated "showcase" gallery of personal mini/basic projects, basic web pages, and developmental experiments. This repository serves as a record of progress across various disciplines of frontend web development, from pure static structures to complex, logic-driven dynamic interfaces.
 
 ## 🚀 Project Overview
 
-This is **not** a traditional portfolio, but rather an organized index of foundational web development exercises. The collection is categorized into three distinct tiers of complexity:
+This is an organized index of foundational web development exercises and mini-pages. The collection is categorized into three distinct tiers of complexity:
 
 ### 📁 Category 01: Static Webpages
 *Pure structure and semantic clarity. High-performance layouts built with HTML5 and Vanilla CSS.*
@@ -18,7 +18,7 @@ This is **not** a traditional portfolio, but rather an organized index of founda
 
 ### 📁 Category 02: Responsive Webpages
 *Fluid systems built to adapt across devices. Utilizing Bootstrap and advanced CSS layouts.*
-- **Assembly Projects**: Food Munch, VR Revolution, Portfolio Hub, Nexus Ecommerce
+- **Assembly Projects**: Food Munch, VR Revolution, Portfolio Website, Fly Buy Ecommerce
 - **Components**: Move Messenger, Inspiring Quotes, Travel Benefits, Design Section, Pricing Plans, Robotics, Dream Car
 
 ### 📁 Category 03: Dynamic Webpages
