@@ -1,10 +1,10 @@
 :root {
-    --primary: #dab9ff;
-    --on-primary: #460283;
-    --secondary: #46f5e0;
-    --on-secondary: #003731;
-    --tertiary: #00daf3;
-    --on-tertiary: #00363d;
+    --primary: #8B8FD4;
+    --on-primary: #0a0a2e;
+    --secondary: #6FB8D9;
+    --on-secondary: #002a3a;
+    --tertiary: #E05A25;
+    --on-tertiary: #1a0a00;
     --surface: #131313;
     --on-surface: #e5e2e1;
     --surface-container: #201f1f;
@@ -29,16 +29,20 @@ body {
     border: 1px solid rgba(148, 141, 162, 0.1);
 }
 
+.hero-glow {
+    background: radial-gradient(circle, rgba(139, 143, 212, 0.12) 0%, rgba(25, 25, 112, 0.06) 50%, transparent 70%);
+}
+
 .signature-glow-primary:hover {
-    box-shadow: 0 0 30px rgba(218, 185, 255, 0.15);
+    box-shadow: 0 0 30px rgba(139, 143, 212, 0.15);
 }
 
 .signature-glow-secondary:hover {
-    box-shadow: 0 0 30px rgba(70, 245, 224, 0.15);
+    box-shadow: 0 0 30px rgba(111, 184, 217, 0.15);
 }
 
 .signature-glow-tertiary:hover {
-    box-shadow: 0 0 30px rgba(0, 218, 243, 0.15);
+    box-shadow: 0 0 30px rgba(224, 90, 37, 0.15);
 }
 
 .material-symbols-outlined {
@@ -274,86 +278,86 @@ body {
 
 /* ========== Per-Category Themes (Subtle) ========== */
 
-/* 01 — Lifestyle & Wellness */
-.cat-wellness { background: #161616; border-top: 1px solid rgba(92, 219, 149, 0.08); }
-.cat-wellness .category-number { color: #4db87e; }
+/* 01 — Lifestyle & Wellness → Speak Now Purple */
+.cat-wellness { background: #161616; border-top: 1px solid rgba(155, 107, 191, 0.08); }
+.cat-wellness .category-number { color: #9B6BBF; }
 .cat-wellness .category-name { color: #d0d0d0; }
 .cat-wellness .category-desc { color: #888; }
-.cat-wellness .category-tag { background: rgba(92, 219, 149, 0.08); color: #5cdb95; border: 1px solid rgba(92, 219, 149, 0.15); }
-.cat-wellness .phone-gallery { background: rgba(92, 219, 149, 0.02); }
+.cat-wellness .category-tag { background: rgba(155, 107, 191, 0.08); color: #B07ED8; border: 1px solid rgba(155, 107, 191, 0.15); }
+.cat-wellness .phone-gallery { background: rgba(155, 107, 191, 0.02); }
 .cat-wellness .phone-mockup { border-color: #282828; }
 .cat-wellness .phone-mockup:nth-child(1) { transform: rotate(-4deg) translateY(20px); }
 .cat-wellness .phone-mockup:nth-child(2) { transform: rotate(0deg) translateY(-12px); }
 .cat-wellness .phone-mockup:nth-child(3) { transform: rotate(4deg) translateY(20px); }
 
-/* 02 — Entertainment & Media */
-.cat-entertainment { background: #181818; border-top: 1px solid rgba(255, 179, 71, 0.08); }
-.cat-entertainment .category-number { color: #e09530; }
+/* 02 — Entertainment & Media → Lover Pink */
+.cat-entertainment { background: #181818; border-top: 1px solid rgba(212, 97, 158, 0.08); }
+.cat-entertainment .category-number { color: #D4619E; }
 .cat-entertainment .category-name { color: #d0d0d0; }
 .cat-entertainment .category-desc { color: #888; }
-.cat-entertainment .category-tag { background: rgba(255, 179, 71, 0.08); color: #ffb347; border: 1px solid rgba(255, 179, 71, 0.15); }
-.cat-entertainment .phone-gallery { background: rgba(255, 179, 71, 0.02); }
+.cat-entertainment .category-tag { background: rgba(212, 97, 158, 0.08); color: #E07AB5; border: 1px solid rgba(212, 97, 158, 0.15); }
+.cat-entertainment .phone-gallery { background: rgba(212, 97, 158, 0.02); }
 .cat-entertainment .phone-mockup { border-color: #282828; }
 .cat-entertainment .phone-mockup:nth-child(1) { transform: rotate(5deg) translateY(15px); }
 .cat-entertainment .phone-mockup:nth-child(2) { transform: rotate(1deg) translateY(-10px); }
 .cat-entertainment .phone-mockup:nth-child(3) { transform: rotate(-3deg) translateY(8px); }
 .cat-entertainment .phone-mockup:nth-child(4) { transform: rotate(-7deg) translateY(-5px); }
 
-/* 03 — Tech & Innovation */
-.cat-tech { background: #141414; border-top: 1px solid rgba(0, 218, 243, 0.08); }
-.cat-tech .category-number { color: #00b8cf; }
+/* 03 — Tech & Innovation → Red Era Crimson */
+.cat-tech { background: #141414; border-top: 1px solid rgba(201, 53, 69, 0.08); }
+.cat-tech .category-number { color: #C93545; }
 .cat-tech .category-name { color: #d0d0d0; }
 .cat-tech .category-desc { color: #888; }
-.cat-tech .category-tag { background: rgba(0, 218, 243, 0.08); color: #00daf3; border: 1px solid rgba(0, 218, 243, 0.15); }
-.cat-tech .phone-gallery { background: rgba(0, 218, 243, 0.02); }
+.cat-tech .category-tag { background: rgba(201, 53, 69, 0.08); color: #E04A5A; border: 1px solid rgba(201, 53, 69, 0.15); }
+.cat-tech .phone-gallery { background: rgba(201, 53, 69, 0.02); }
 .cat-tech .phone-mockup { border-color: #282828; }
 .cat-tech .phone-mockup:nth-child(1) { transform: rotate(-7deg) translateY(8px) scale(0.95); }
 .cat-tech .phone-mockup:nth-child(2) { transform: rotate(0deg) translateY(-15px) scale(1.05); }
 .cat-tech .phone-mockup:nth-child(3) { transform: rotate(7deg) translateY(8px) scale(0.95); }
 
-/* 04 — Travel & Hospitality */
-.cat-travel { background: #171717; border-top: 1px solid rgba(255, 112, 67, 0.08); }
-.cat-travel .category-number { color: #e0603a; }
+/* 04 — Travel & Hospitality → Evermore Burnt Orange */
+.cat-travel { background: #171717; border-top: 1px solid rgba(192, 112, 64, 0.08); }
+.cat-travel .category-number { color: #C07040; }
 .cat-travel .category-name { color: #d0d0d0; }
 .cat-travel .category-desc { color: #888; }
-.cat-travel .category-tag { background: rgba(255, 112, 67, 0.08); color: #ff7043; border: 1px solid rgba(255, 112, 67, 0.15); }
-.cat-travel .phone-gallery { background: rgba(255, 112, 67, 0.02); }
+.cat-travel .category-tag { background: rgba(192, 112, 64, 0.08); color: #D48858; border: 1px solid rgba(192, 112, 64, 0.15); }
+.cat-travel .phone-gallery { background: rgba(192, 112, 64, 0.02); }
 .cat-travel .phone-mockup { border-color: #282828; }
 .cat-travel .phone-mockup:nth-child(1) { transform: rotate(3deg) translateY(-10px); }
 .cat-travel .phone-mockup:nth-child(2) { transform: rotate(-2deg) translateY(18px); }
 .cat-travel .phone-mockup:nth-child(3) { transform: rotate(6deg) translateY(-5px); }
 
-/* 05 — Education & Knowledge */
-.cat-education { background: #151515; border-top: 1px solid rgba(179, 136, 255, 0.08); }
-.cat-education .category-number { color: #9a6ef0; }
+/* 05 — Education & Knowledge → Fearless Gold */
+.cat-education { background: #151515; border-top: 1px solid rgba(201, 168, 48, 0.08); }
+.cat-education .category-number { color: #C9A830; }
 .cat-education .category-name { color: #d0d0d0; }
 .cat-education .category-desc { color: #888; }
-.cat-education .category-tag { background: rgba(179, 136, 255, 0.08); color: #b388ff; border: 1px solid rgba(179, 136, 255, 0.15); }
-.cat-education .phone-gallery { background: rgba(179, 136, 255, 0.02); }
+.cat-education .category-tag { background: rgba(201, 168, 48, 0.08); color: #DABE4A; border: 1px solid rgba(201, 168, 48, 0.15); }
+.cat-education .phone-gallery { background: rgba(201, 168, 48, 0.02); }
 .cat-education .phone-mockup { border-color: #282828; }
 .cat-education .phone-mockup:nth-child(1) { transform: rotate(-5deg) translateY(14px); }
 .cat-education .phone-mockup:nth-child(2) { transform: rotate(2deg) translateY(-18px); }
 .cat-education .phone-mockup:nth-child(3) { transform: rotate(-3deg) translateY(6px); }
 
-/* 06 — Social & Commerce */
-.cat-social { background: #161616; border-top: 1px solid rgba(255, 64, 129, 0.08); }
-.cat-social .category-number { color: #e03570; }
+/* 06 — Social & Commerce → Folklore Silver */
+.cat-social { background: #161616; border-top: 1px solid rgba(144, 138, 140, 0.08); }
+.cat-social .category-number { color: #908A8C; }
 .cat-social .category-name { color: #d0d0d0; }
 .cat-social .category-desc { color: #888; }
-.cat-social .category-tag { background: rgba(255, 64, 129, 0.08); color: #ff4081; border: 1px solid rgba(255, 64, 129, 0.15); }
-.cat-social .phone-gallery { background: rgba(255, 64, 129, 0.02); }
+.cat-social .category-tag { background: rgba(144, 138, 140, 0.08); color: #A8A2A4; border: 1px solid rgba(144, 138, 140, 0.15); }
+.cat-social .phone-gallery { background: rgba(144, 138, 140, 0.02); }
 .cat-social .phone-mockup { border-color: #282828; }
 .cat-social .phone-mockup:nth-child(1) { transform: rotate(6deg) translateY(10px); }
 .cat-social .phone-mockup:nth-child(2) { transform: rotate(-1deg) translateY(-15px); }
 .cat-social .phone-mockup:nth-child(3) { transform: rotate(-5deg) translateY(12px); }
 
-/* 07 — Profiles & Awareness */
-.cat-profiles { background: #171717; border-top: 1px solid rgba(255, 213, 79, 0.08); }
-.cat-profiles .category-number { color: #d4b030; }
+/* 07 — Profiles & Awareness → Debut Teal */
+.cat-profiles { background: #171717; border-top: 1px solid rgba(91, 168, 159, 0.08); }
+.cat-profiles .category-number { color: #5BA89F; }
 .cat-profiles .category-name { color: #d0d0d0; }
 .cat-profiles .category-desc { color: #888; }
-.cat-profiles .category-tag { background: rgba(255, 213, 79, 0.08); color: #ffd54f; border: 1px solid rgba(255, 213, 79, 0.15); }
-.cat-profiles .phone-gallery { background: rgba(255, 213, 79, 0.02); }
+.cat-profiles .category-tag { background: rgba(91, 168, 159, 0.08); color: #72BEB5; border: 1px solid rgba(91, 168, 159, 0.15); }
+.cat-profiles .phone-gallery { background: rgba(91, 168, 159, 0.02); }
 .cat-profiles .phone-mockup { border-color: #282828; }
 .cat-profiles .phone-mockup:nth-child(1) { transform: rotate(-3deg) translateY(-8px) scale(0.97); }
 .cat-profiles .phone-mockup:nth-child(2) { transform: rotate(1deg) translateY(12px) scale(1.04); }
@@ -459,7 +463,7 @@ body {
     margin-right: -50vw;
     padding: 100px 60px; /* Increased top/bottom padding as requested */
     box-sizing: border-box;
-    background: radial-gradient(circle at 20% 50%, rgba(255,110,48,0.03) 0%, rgba(0,0,0,0) 70%);
+    background: radial-gradient(circle at 20% 50%, rgba(111, 184, 217, 0.04) 0%, rgba(0,0,0,0) 70%);
 }
 
 .mobile-group {
@@ -755,25 +759,26 @@ body {
 }
 
 /* Per-Project Accents */
-.rp-food { border-top: 1px solid rgba(70, 245, 224, 0.1); }
-.rp-food .project-num { color: #46f5e0; }
-.rp-food .feature-tag { background: rgba(70, 245, 224, 0.08); color: #46f5e0; border: 1px solid rgba(70, 245, 224, 0.15); }
-.rp-food .responsive-preview { background: rgba(70, 245, 224, 0.02); }
+/* Per-Project Accents → Showgirl Warm Orange */
+.rp-food { border-top: 1px solid rgba(224, 90, 37, 0.1); }
+.rp-food .project-num { color: #E05A25; }
+.rp-food .feature-tag { background: rgba(224, 90, 37, 0.08); color: #E8763F; border: 1px solid rgba(224, 90, 37, 0.15); }
+.rp-food .responsive-preview { background: rgba(224, 90, 37, 0.02); }
 
-.rp-vr { background: #161616; border-top: 1px solid rgba(0, 218, 243, 0.1); }
-.rp-vr .project-num { color: #00daf3; }
-.rp-vr .feature-tag { background: rgba(0, 218, 243, 0.08); color: #00daf3; border: 1px solid rgba(0, 218, 243, 0.15); }
-.rp-vr .responsive-preview { background: rgba(0, 218, 243, 0.02); }
+.rp-vr { background: #161616; border-top: 1px solid rgba(224, 90, 37, 0.1); }
+.rp-vr .project-num { color: #E05A25; }
+.rp-vr .feature-tag { background: rgba(224, 90, 37, 0.08); color: #E8763F; border: 1px solid rgba(224, 90, 37, 0.15); }
+.rp-vr .responsive-preview { background: rgba(224, 90, 37, 0.02); }
 
-.rp-portfolio { border-top: 1px solid rgba(218, 185, 255, 0.1); }
-.rp-portfolio .project-num { color: #dab9ff; }
-.rp-portfolio .feature-tag { background: rgba(218, 185, 255, 0.08); color: #dab9ff; border: 1px solid rgba(218, 185, 255, 0.15); }
-.rp-portfolio .responsive-preview { background: rgba(218, 185, 255, 0.02); }
+.rp-portfolio { border-top: 1px solid rgba(224, 90, 37, 0.1); }
+.rp-portfolio .project-num { color: #E05A25; }
+.rp-portfolio .feature-tag { background: rgba(224, 90, 37, 0.08); color: #E8763F; border: 1px solid rgba(224, 90, 37, 0.15); }
+.rp-portfolio .responsive-preview { background: rgba(224, 90, 37, 0.02); }
 
-.rp-ecommerce { background: #161616; border-top: 1px solid rgba(70, 245, 224, 0.1); }
-.rp-ecommerce .project-num { color: #46f5e0; }
-.rp-ecommerce .feature-tag { background: rgba(70, 245, 224, 0.08); color: #46f5e0; border: 1px solid rgba(70, 245, 224, 0.15); }
-.rp-ecommerce .responsive-preview { background: rgba(70, 245, 224, 0.02); }
+.rp-ecommerce { background: #161616; border-top: 1px solid rgba(224, 90, 37, 0.1); }
+.rp-ecommerce .project-num { color: #E05A25; }
+.rp-ecommerce .feature-tag { background: rgba(224, 90, 37, 0.08); color: #E8763F; border: 1px solid rgba(224, 90, 37, 0.15); }
+.rp-ecommerce .responsive-preview { background: rgba(224, 90, 37, 0.02); }
 
 /* Responsive Showcase — Mobile */
 @media (max-width: 1024px) {
