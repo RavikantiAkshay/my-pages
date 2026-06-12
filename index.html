@@ -289,62 +289,55 @@
         </section>
 
         <!-- Section 2: Responsive Webpages -->
-        <section class="py-24 px-8 bg-surface relative overflow-hidden" id="responsive">
+        <section class="bg-surface relative" id="responsive">
             <div class="absolute top-0 right-0 w-96 h-96 bg-[#6FB8D9]/5 blur-[100px] rounded-full pointer-events-none"></div>
-            <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 reveal">
-                    <div class="max-w-2xl">
-                        <h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface mb-4">Responsive Webpages</h2>
-                        <p class="text-on-surface-variant text-lg">Fluid systems that breathe across devices. Adaptive architectures that prioritize the user experience on any screen size.</p>
-                    </div>
-                    <div class="flex items-center gap-2 text-[#6FB8D9]">
-                        <span class="text-xs font-label uppercase tracking-widest">Category: 02</span>
-                        <div class="h-[1px] w-12 bg-[#6FB8D9]"></div>
-                    </div>
-                </div>
-                
-                <!-- Row 1: Panoramic Showcase (Mobiles + Travel Benefits) -->
-                <div class="responsive-panorama-row">
-                    <!-- Mobile Group -->
-                    <div class="mobile-group">
-                        <div class="phone-wrapper">
-                            <div class="mobile-phone">
-                                <iframe src="projects/responsive/move_messenger/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+            
+            <!-- 3D Card Grid — acts as the main Responsive Webpages showcase -->
+            <div class="hero-parallax" id="heroParallax">
+                <div class="parallax-content">
+                    
+                    <!-- Integrated Header -->
+                    <div class="max-w-7xl mx-auto px-8 w-full pt-24 pb-8 relative z-10">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 reveal">
+                            <div class="max-w-2xl">
+                                <h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface mb-4">Responsive Webpages</h2>
+                                <p class="text-on-surface-variant text-lg">Fluid systems that breathe across devices. Adaptive architectures that prioritize the user experience on any screen size.</p>
                             </div>
-                        </div>
-                        <div class="phone-wrapper">
-                            <div class="mobile-phone">
-                                <iframe src="projects/responsive/inspiring_quotes/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+                            <div class="flex items-center gap-2 text-[#6FB8D9]">
+                                <span class="text-xs font-label uppercase tracking-widest">Category: 02</span>
+                                <div class="h-[1px] w-12 bg-[#6FB8D9]"></div>
                             </div>
                         </div>
                     </div>
-                    <!-- Travel Benefits Card -->
-                    <div class="main-dashboard-card">
-                        <div class="browser-frame">
-                            <iframe src="projects/responsive/travel_benefits/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Row 2: Simple Side-by-Side Cards -->
-                <div class="responsive-dual-row">
-                    <!-- Design Section -->
-                    <div class="dashboard-card">
-                        <div class="browser-frame">
-                            <div class="iframe-wrapper">
-                                <iframe src="projects/responsive/design_section/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
-                            </div>
+                    <div class="parallax-rows-wrapper" id="parallaxWrapper">
+                        <!-- Row 1: translates RIGHT (+) -->
+                        <div class="parallax-row" data-row="1">
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/design_section/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Design Section</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/inspiring_quotes/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Inspiring Quotes</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/move_messenger/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Messenger</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/travel_benefits/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Travel Benefits</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/pricing_plans/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Pricing Plans</div></div>
                         </div>
-                    </div>
-                    <!-- Pricing Plans -->
-                    <div class="dashboard-card">
-                        <div class="browser-frame">
-                            <div class="iframe-wrapper">
-                                <iframe src="projects/responsive/pricing_plans/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
-                            </div>
+                        <!-- Row 2: translates LEFT (-) -->
+                        <div class="parallax-row" data-row="2">
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/travel_benefits/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Travel Benefits</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/pricing_plans/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Pricing Plans</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/design_section/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Design Section</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/move_messenger/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Messenger</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/inspiring_quotes/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Inspiring Quotes</div></div>
+                        </div>
+                        <!-- Row 3: translates LEFT (-) -->
+                        <div class="parallax-row" data-row="3">
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/pricing_plans/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Pricing Plans</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/move_messenger/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Messenger</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/travel_benefits/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Travel Benefits</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/inspiring_quotes/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Inspiring Quotes</div></div>
+                            <div class="parallax-card"><div class="parallax-iframe-wrap"><iframe src="projects/responsive/design_section/index.html" loading="lazy" sandbox="allow-scripts allow-same-origin" tabindex="-1"></iframe></div><div class="parallax-card-label">Design Section</div></div>
                         </div>
                     </div>
                 </div>
+            </div>
 
                 <!-- 3. Extra Large Devices (Widescreen Elements) -->
                 <div class="widescreen-showcase group">
